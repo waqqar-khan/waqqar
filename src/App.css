@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  background-color: #390b3e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #eafa04;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #fcf406;
+}
+
+.home-section,
+.about-me-section,
+.projects-section,
+.recommendations-section,
+.contact-me-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5.4rem 1rem 0;
+}
+
+.profile-content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.companies-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.company-logo img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .company-logo img {
+    width: 100px;
+  }
+}
+
+.skills-section {
+  width: 100%;
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.skills-logos {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.skills-logos img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.skills-logos img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 1rem 4rem;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .companies-section {
+    width: 100%;
+  }
+
+  .company-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .skills-section {
+    padding: 2rem 1rem;
+  }
+
+  .skills-logos {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .skills-logos img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.about-me-section {
+  background-color: #e2e2e2;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-text {
+  max-width: 800px;
+  text-align: left;
+  margin: 1rem;
+}
+
+.about-me-text h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #333;
+}
+
+.about-me-text p {
+  line-height: 1.6;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-me-text h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  width: 300px;
+  text-align: left;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cb0ee0;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-card p {
+  color: #555;
+  padding-top: 1.5rem;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #cb0ee0;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #681971;
+  text-decoration: none;
+}
+
+.recommendations-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.recommendation-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 10px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.recommendation-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.recommendation-feedback {
+  font-style: italic;
+}
+
+.recommendation-name {
+  font-weight: bold;
+  font-size: large;
+  color: #1b10ed;
+  margin-top: 1rem;
+}
+
+.recommendation-position {
+  color: #555;
+}
+
+.recommendation-linkedin {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.recommendation-linkedin:hover {
+  text-decoration: underline;
+}
+
+.see-more {
+  text-decoration: underline;
+  color: #3cbfda;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  color: #005f8a;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.recommendation-linkedin {
+  display: inline-block;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.recommendation-linkedin:hover {
+  background-color: #005f8a;
+  text-decoration: none;
+}
+
+.contact-me-btn {
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-me-btn:hover {
+  background-color: #005f8a;
+}
+
+footer {
+  text-align: center;
+  padding: 0.1rem;
+  background-color: #390b3e;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+}
