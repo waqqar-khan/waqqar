@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects-section">
-      <h2>Projects</h2>
+      <span className="section-header-btn">Live Personal Projects</span>
       <div className="project-cards">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />

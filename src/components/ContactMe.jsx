@@ -3,17 +3,15 @@ import "../App.css";
 const ContactMe = () => {
   return (
     <section id="contact-me" className="contact-me-section">
-      <h2>Contact Me</h2>
+      <span className="section-header-btn">Contact Me</span>
       <p>
         If you&apos;d like to get in touch, please message me at{" "}
-        <button className="contact-me-btn">
-          <a
-            className="recommendation-linkedin"
-            href="link:https://www.linkedin.com/in/waqqar-khan"
-          >
-            Waqqar@LinkedIn
-          </a>
-        </button>
+        <a
+          className="contact-me-btn"
+          href="link:https://www.linkedin.com/in/waqqar-khan"
+        >
+          Waqqar@LinkedIn
+        </a>
       </p>
     </section>
   );

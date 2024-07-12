@@ -20,7 +20,7 @@ const Home = () => {
     <section id="home" className="home-section">
       <div className="profile-content">
         <img src={profileImage} alt="Profile" className="profile-image" />
-        <h2>Welcome to My Portfolio</h2>
+        <span>Welcome to My Portfolio</span>
         <p>Explore my projects, learn more about me, and get in touch.</p>
       </div>
       <div className="companies-section">
@@ -35,10 +35,10 @@ const Home = () => {
             <img src={StatusNeoLogo} alt="StatusNeo" />
           </div>
         </div>
-        <h3>My Past Organisations</h3>
+        <h1 className="company-past-org">Past Organisations</h1>
       </div>
       <div className="skills-section">
-        <h3>Skills</h3>
+        <span className="section-header-btn">Skills</span>
         <div className="skills-logos">
           <img src={ReactLogo} alt="React" />
           <img src={JSLogo} alt="JavaScript" />

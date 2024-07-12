@@ -3,12 +3,11 @@ import "../App.css";
 const AboutMe = () => {
   return (
     <section id="about-me" className="about-me-section">
-      <h2>About Me</h2>
+      <span className="section-header-btn">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
           <h3>
-            Experienced ReactJS Developer (Frontend Developer) | Certified Scrum
-            Product Owner® | Expert in JavaScript, React and Backstage.io
+            Senior Frontend Developer (React.JS)
           </h3>
           <p>
             Seasoned in the world of Frontend development, with a robust

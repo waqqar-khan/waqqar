@@ -46,8 +46,8 @@ Overall, I can recommend that Waqar is an incredibly talented and hardworking de
       image: anshumanTripathiImage,
       feedback:
         "Waqqar Khan is a great team player with splendid team leader capability. His technical skills always come handy whenever team faces any complex problem. Not only he stands firm in pressurising situation but tries hard to keep pressure off the team by leading from the front. As a person, I woiuld say he is responsible , friendly and with positive vibes enough to make every target look easy. Its always a pleasure to work with him.",
-      name: "Anshuman Kumar",
-      position: "Frontend Developer",
+      name: "Anshuman Tripathi",
+      position: "Senior Frontend Developer",
       company: "Synechron",
       linkedin: "https://www.linkedin.com/in/anshuman-tripathi-442679193",
     },
@@ -56,7 +56,7 @@ Overall, I can recommend that Waqar is an incredibly talented and hardworking de
       feedback:
         "Waqqar consistently gave 100 percent effort to the team and played a significant role in ensuring that we completed assignments on time.I highly recommend him to any company.",
       name: "Manoj Raveendaran",
-      position: "Associate",
+      position: "Senior Software Engineer",
       company: "Cognizant",
       linkedin: "https://www.linkedin.com/in/manoj-raveendran-98018466",
     },
@@ -85,14 +85,18 @@ Overall, I can recommend that Waqar is an incredibly talented and hardworking de
   };
 
   return (
-    <section id="recommendations" className="recommendations-section">
-      <h2>Recommendations</h2>
-      <Slider {...settings}>
-        {recommendations.map((recommendation, index) => (
-          <RecommendationCard key={index} recommendation={recommendation} />
-        ))}
-      </Slider>
-    </section>
+    <div id="recommendations">
+      <span id="recommendation-header-btn" className="section-header-btn">
+        Recommendations
+      </span>
+      <section className="recommendations-section">
+        <Slider {...settings}>
+          {recommendations.map((recommendation, index) => (
+            <RecommendationCard key={index} recommendation={recommendation} />
+          ))}
+        </Slider>
+      </section>
+    </div>
   );
 };
 
@@ -150,7 +154,7 @@ RecommendationCard.propTypes = {
 const NextArrow = ({ className, style, onClick }) => (
   <div
     className={`${className} slick-arrow`}
-    style={{ ...style, display: "block", background: "#333" }}
+    style={{ ...style, display: "block" }}
     onClick={onClick}
   >
     <i className="fas fa-chevron-right"></i>
@@ -160,7 +164,7 @@ const NextArrow = ({ className, style, onClick }) => (
 const PrevArrow = ({ className, style, onClick }) => (
   <div
     className={`${className} slick-arrow`}
-    style={{ ...style, display: "block", background: "#333" }}
+    style={{ ...style, display: "block" }}
     onClick={onClick}
   >
     <i className="fas fa-chevron-left"></i>
