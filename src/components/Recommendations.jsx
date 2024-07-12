@@ -15,8 +15,10 @@ const Recommendations = () => {
   const recommendations = [
     {
       image: anirudhGoelImage,
-      feedback:
-        "Waqar has a deep understanding of React and its ecosystem, and he is always eager to learn and stay up-to-date with the latest developments in the field. He is skilled in writing clean and efficient code that is easily maintainable, and he has a keen eye for detail, ensuring that their code is both functional and visually appealing. What truly sets Waqar apart, however, is his dedication towards work. He is always willing to go above and beyond to ensure that projects are completed on time and to the highest standards. He is an excellent communicator, and works collaboratively with team members to ensure that everyone is on the same page and that the project is moving forward smoothly. Overall, I can recommend that Waqar is an incredibly talented and hardworking developer who would make a valuable addition to any team.",
+      feedback: `I have had the pleasure of working with Waqar on the Backstage project, and I can confidently say that he is an exceptional developer who consistently delivers high-quality work.
+Waqar has a deep understanding of React and its ecosystem, and he is always eager to learn and stay up-to-date with the latest developments in the field. He is skilled in writing clean and efficient code that is easily maintainable, and he has a keen eye for detail, ensuring that their code is both functional and visually appealing.
+What truly sets Waqar apart, however, is his dedication towards work. He is always willing to go above and beyond to ensure that projects are completed on time and to the highest standards. He is an excellent communicator, and works collaboratively with team members to ensure that everyone is on the same page and that the project is moving forward smoothly. For Backstage, he required to learn new things and do a lot of research where I found him that he did not lose his motivation and tried to excel in his work.
+Overall, I can recommend that Waqar is an incredibly talented and hardworking developer who would make a valuable addition to any team.`,
       name: "Anirudh Goel",
       position: "Senior Product Manager",
       company: "Global Logic",
@@ -76,7 +78,7 @@ const Recommendations = () => {
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -113,10 +115,10 @@ const RecommendationCard = ({ recommendation }) => {
         {showMore
           ? recommendation.feedback
           : `${recommendation.feedback.substring(0, 200)}...`}
+        <span onClick={toggleShowMore} className="see-more">
+          {showMore ? "See Less" : "See More"}
+        </span>
         &rdquo;{" "}
-        <a onClick={toggleShowMore} className="see-more">
-          {showMore ? "See Less" : "See More..."}
-        </a>
       </p>
       <p className="recommendation-name">{recommendation.name}</p>
       <p className="recommendation-position">
@@ -147,29 +149,22 @@ RecommendationCard.propTypes = {
 
 const NextArrow = ({ className, style, onClick }) => (
   <div
-    className={className}
-    style={{
-      ...style,
-      display: "block",
-      background: "black",
-      marginRight: "5%",
-    }}
+    className={`${className} slick-arrow`}
+    style={{ ...style, display: "block", background: "#333" }}
     onClick={onClick}
-  />
+  >
+    <i className="fas fa-chevron-right"></i>
+  </div>
 );
 
 const PrevArrow = ({ className, style, onClick }) => (
   <div
-    className={className}
-    style={{
-      ...style,
-      display: "block",
-      background: "black",
-      marginLeft: "5%",
-      zIndex: 1,
-    }}
+    className={`${className} slick-arrow`}
+    style={{ ...style, display: "block", background: "#333" }}
     onClick={onClick}
-  />
+  >
+    <i className="fas fa-chevron-left"></i>
+  </div>
 );
 
 NextArrow.propTypes = {

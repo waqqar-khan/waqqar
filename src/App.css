@@ -301,64 +301,90 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+section {
+  padding: 1rem;
+}
+
+#recommendations {
+  padding-top: 3rem;
+}
+
 .recommendations-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.recommendations-section h2 {
   text-align: center;
-  padding: 4rem 1rem;
-  background-color: #f4f4f4;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
 }
 
 .recommendation-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  margin: 1rem;
   padding: 1rem;
-  box-sizing: border-box;
-  text-align: left;
-  border-radius: 10px;
-  max-width: 400px;
-  flex: 1;
+  border-radius: 8px;
+  background-color: #c7c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 4%;
 }
 
 .recommendation-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
 .recommendation-feedback {
-  font-style: italic;
+  font-size: 0.9rem;
+  color: #380430;
+  margin-bottom: 1rem;
+  text-align: left;
+  position: relative;
 }
 
 .recommendation-name {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: large;
-  color: #1b10ed;
+  color: #380430d3;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .recommendation-position {
-  color: #555;
-}
-
-.recommendation-linkedin {
-  color: #0077b5;
-  text-decoration: none;
-}
-
-.recommendation-linkedin:hover {
-  text-decoration: underline;
+  font-size: 0.9rem;
+  color: #790d69d3;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .see-more {
   text-decoration: underline;
-  color: #3cbfda;
+  color: #d015b4;
   margin-top: 0.5rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .see-more:hover {
-  color: #005f8a;
+  color: #380430;
 }
 
 .slick-prev,
@@ -376,17 +402,19 @@ nav ul li a:hover {
 
 .recommendation-linkedin {
   display: inline-block;
-  background-color: #0077b5;
-  color: #fff;
+  background-color: #db13bdd3;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 0.8rem;
+  color: #ffffffd3;
+  text-decoration: none;
   transition: background-color 0.3s;
 }
 
 .recommendation-linkedin:hover {
-  background-color: #005f8a;
+  background-color: #67285dd3;
   text-decoration: none;
 }
 
