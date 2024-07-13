@@ -6,9 +6,7 @@ const AboutMe = () => {
       <span className="section-header-btn">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
-          <h3>
-            Senior Frontend Developer (React.JS)
-          </h3>
+          <h3>Senior Frontend Developer (React.JS)</h3>
           <p>
             Seasoned in the world of Frontend development, with a robust
             background spanning over 4 years, I bring forth exceptional

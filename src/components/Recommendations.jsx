@@ -82,6 +82,15 @@ Overall, I can recommend that Waqar is an incredibly talented and hardworking de
     pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -151,23 +160,23 @@ RecommendationCard.propTypes = {
   }).isRequired,
 };
 
-const NextArrow = ({ className, style, onClick }) => (
-  <div
-    className={`${className} slick-arrow`}
-    style={{ ...style, display: "block" }}
-    onClick={onClick}
-  >
-    <i className="fas fa-chevron-right"></i>
-  </div>
-);
-
 const PrevArrow = ({ className, style, onClick }) => (
   <div
-    className={`${className} slick-arrow`}
-    style={{ ...style, display: "block" }}
+    className={`${className} slick-arrow custom-arrow`}
+    style={{ ...style, display: "block", color: "#b315c5" }}
     onClick={onClick}
   >
     <i className="fas fa-chevron-left"></i>
+  </div>
+);
+
+const NextArrow = ({ className, style, onClick }) => (
+  <div
+    className={`${className} slick-arrow custom-arrow`}
+    style={{ ...style, display: "block", color: "#b315c5" }}
+    onClick={onClick}
+  >
+    <i className="fas fa-chevron-right"></i>
   </div>
 );
 

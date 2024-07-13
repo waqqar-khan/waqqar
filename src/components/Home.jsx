@@ -20,19 +20,41 @@ const Home = () => {
     <section id="home" className="home-section">
       <div className="profile-content">
         <img src={profileImage} alt="Profile" className="profile-image" />
-        <span>Welcome to My Portfolio</span>
-        <p>Explore my projects, learn more about me, and get in touch.</p>
+        <h1 className="portfolio-heading-start">
+          Welcome to My <span className="portfolio-heading">Portfolio</span>
+        </h1>
+        <p className="portfolio-sub-heading">
+          Explore my projects, learn more about me, and get in touch.
+        </p>
       </div>
       <div className="companies-section">
         <div className="company-logos">
           <div className="company-logo">
-            <img src={AccentureLogo} alt="Accenture" />
+            <a
+              href="https://www.accenture.com/in-en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={AccentureLogo} alt="Accenture" />
+            </a>
           </div>
           <div className="company-logo">
-            <img src={SavantisLogo} alt="Savantis" />
+            <a
+              href="https://www.savantis.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={SavantisLogo} alt="Savantis" />
+            </a>
           </div>
           <div className="company-logo">
-            <img src={StatusNeoLogo} alt="StatusNeo" />
+            <a
+              href="https://statusneo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={StatusNeoLogo} alt="StatusNeo" />
+            </a>
           </div>
         </div>
         <h1 className="company-past-org">Past Organisations</h1>
