@@ -21,7 +21,7 @@ What truly sets Waqar apart, however, is his dedication towards work. He is alwa
 Overall, I can recommend that Waqar is an incredibly talented and hardworking developer who would make a valuable addition to any team.`,
       name: "Anirudh Goel",
       position: "Senior Product Manager",
-      company: "Global Logic",
+      company: "GlobalLogic",
       linkedin: "https://www.linkedin.com/in/anirudhgoel7",
     },
     {
