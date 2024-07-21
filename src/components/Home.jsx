@@ -4,6 +4,7 @@ import AccentureLogo from "../assets/accenture.png";
 import SavantisLogo from "../assets/savantis.png";
 import StatusNeoLogo from "../assets/statusneo.png";
 import ReactLogo from "../assets/react.png";
+import NextJSLogo from "../assets/nextjs.png";
 import JSLogo from "../assets/js.png";
 import ReduxLogo from "../assets/redux.png";
 import GitLogo from "../assets/git.png";
@@ -63,6 +64,7 @@ const Home = () => {
         <span className="section-header-btn">Skills</span>
         <div className="skills-logos">
           <img src={ReactLogo} alt="React" />
+          <img src={NextJSLogo} alt="React" />
           <img src={JSLogo} alt="JavaScript" />
           <img src={ReduxLogo} alt="Redux" />
           <img src={GitLogo} alt="Git" />
