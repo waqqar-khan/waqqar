@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-  color: #faeaea;
+  color: #fff;
 }
 
 nav ul {
@@ -247,6 +247,7 @@ nav ul li a:hover {
 
 .profile-image {
   border-radius: 50%;
+  border: 6px solid #fff;
   width: 300px;
   height: 300px;
   margin: 1rem;
@@ -313,15 +314,15 @@ nav ul li a:hover {
 .skills-logos {
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
-  padding: 3rem 1rem;
+  padding: 3rem 1.5rem;
 }
 
 .skills-logos img {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
+  padding: 0 .5rem;
 }
 
 .skills-logos img:hover {

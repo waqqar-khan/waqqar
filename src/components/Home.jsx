@@ -63,16 +63,16 @@ const Home = () => {
       <div className="skills-section">
         <span className="section-header-btn">Skills</span>
         <div className="skills-logos">
-          <img src={ReactLogo} alt="React" />
-          <img src={NextJSLogo} alt="React" />
-          <img src={JSLogo} alt="JavaScript" />
-          <img src={ReduxLogo} alt="Redux" />
-          <img src={GitLogo} alt="Git" />
+          <img src={JiraLogo} alt="Jira" />
           <img src={HtmlLogo} alt="HTML" />
           <img src={CssLogo} alt="CSS" />
+          <img src={GitLogo} alt="Git" />
+          <img src={ReactLogo} alt="React" />
+          <img src={JSLogo} alt="JavaScript" />
+          <img src={NextJSLogo} alt="NextJS" />
+          <img src={ReduxLogo} alt="Redux" />
           <img src={TailwindLogo} alt="Tailwind CSS" />
           <img src={FigmaLogo} alt="Figma" />
-          <img src={JiraLogo} alt="Jira" />
           <img src={PostmanLogo} alt="Postman" />
           <img src={ConfluenceLogo} alt="Confluence" />
         </div>
