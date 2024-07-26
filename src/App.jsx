@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
+import Blogs from "./components/Blogs";
 import Recommendations from "./components/Recommendations";
 import ContactMe from "./components/ContactMe";
 import "./App.css";
@@ -14,7 +14,7 @@ function App() {
       <main>
         <Home />
         <AboutMe />
-        <Projects />
+        <Blogs />
         <Recommendations />
         <ContactMe />
       </main>

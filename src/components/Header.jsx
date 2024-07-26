@@ -34,8 +34,8 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={toggleMenu}>
-              Projects
+            <a href="#blogs" onClick={toggleMenu}>
+            Blogs
             </a>
           </li>
           <li>

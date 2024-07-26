@@ -22,10 +22,10 @@ const Home = () => {
       <div className="profile-content">
         <img src={profileImage} alt="Profile" className="profile-image" />
         <h1 className="portfolio-heading-start">
-          Welcome to My <span className="portfolio-heading">Portfolio</span>
+          My Name is <span className="portfolio-heading">Waqqar Khan</span>
         </h1>
         <p className="portfolio-sub-heading">
-          Explore my projects, learn more about me, and get in touch.
+          Explore my blogs, learn more about me, and get in touch.
         </p>
       </div>
       <div className="companies-section">
