@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Header = () => {
@@ -24,29 +25,29 @@ const Header = () => {
       <nav className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#home" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about-me" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu}>
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#blogs" onClick={toggleMenu}>
-            Blogs
-            </a>
+            <Link to="/" onClick={toggleMenu}>
+              Blogs
+            </Link>
           </li>
           <li>
-            <a href="#recommendations" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu}>
               Recommendations
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact-me" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu}>
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

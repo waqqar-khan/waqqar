@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .home-section,
 .about-me-section,
-.projects-section,
+.blog-section,
 .recommendations-section,
 .contact-me-section {
   text-align: center;
@@ -322,7 +322,7 @@ nav ul li a:hover {
   height: 100px;
   object-fit: contain;
   transition: transform 0.2s;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .skills-logos img:hover {
@@ -361,7 +361,7 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.project-cards {
+.blog-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -369,7 +369,7 @@ nav ul li a:hover {
   margin-top: 1rem;
 }
 
-.project-card {
+.blog-card {
   background: #f1a9ebdf;
   border: 1px solid #ddd;
   margin: 1rem;
@@ -383,12 +383,12 @@ nav ul li a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
+.blog-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card-header {
+.blog-card-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -401,7 +401,7 @@ nav ul li a:hover {
   text-transform: uppercase;
 }
 
-.project-card p {
+.blog-card p {
   color: #333;
   padding-top: 1.5rem;
   font-size: medium;
@@ -409,7 +409,7 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.project-card a {
+.blog-card a {
   display: block;
   background-color: #dc08f096;
   color: #fff;
@@ -421,9 +421,33 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.project-card a:hover {
+.blog-card a:hover {
   background-color: rgba(123, 22, 105, 0.953);
   text-decoration: none;
+}
+
+.blog-container {
+  width: "60%";
+  margin: "0 auto";
+  padding: "20px";
+  font-family: "Arial, sans-serif";
+  line-height: "1.6";
+  color: "#333";
+}
+.blog-header {
+  text-align: "center";
+  color: "#444";
+}
+.blog-qaContainer {
+  margin-bottom: "20px";
+  border-bottom: "1px solid #ddd";
+  padding-bottom: "10px";
+}
+.blog-question {
+  color: "#555";
+}
+.blog-answer {
+  color: "#666";
 }
 
 #recommendations {
@@ -758,16 +782,16 @@ footer {
     font-size: 1.2rem;
   }
 
-  .project-card p {
+  .blog-card p {
     text-align: center;
   }
 
-  .project-cards {
+  .blog-cards {
     flex-direction: column;
     padding: 0;
   }
 
-  .project-card {
+  .blog-card {
     width: 90%;
     margin: 1rem auto;
   }

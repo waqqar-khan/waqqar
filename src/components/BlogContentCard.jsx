@@ -1,21 +1,21 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 import "../App.css";
 
-const BLogContentCard = ({ blog }) => {
+const BlogContentCard = ({ blog }) => {
   return (
-    <div className="project-card">
-      <a href={blog.link} target="_blank" rel="noopener noreferrer">
-        <h3>{blog.title}</h3>
-      </a>
+    <div className="blog-card">
+      <h3>{blog.title}</h3>
+      <Link to={blog.internalLink}>Read More</Link>
     </div>
   );
 };
 
-BLogContentCard.propTypes = {
+BlogContentCard.propTypes = {
   blog: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-  }).isRequired,
+    internalLink: PropTypes.string.isRequired
+  }).isRequired
 };
 
-export default BLogContentCard;
+export default BlogContentCard;

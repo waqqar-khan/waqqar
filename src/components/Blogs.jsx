@@ -5,34 +5,30 @@ const Blogs = () => {
   const blogs = [
     {
       title: "JavaScript Blog",
-      link: "https://waqqar.vercel.app/",
+      internalLink: "/javascript",
     },
     {
       title: "React JS Blog",
-      link: "https://waqqar.vercel.app/",
-    },
-    {
-      title: "GIT & GITHUB Blog",
-      link: "https://waqqar.vercel.app/",
+      internalLink: "/reactjs",
     },
     {
       title: "Next JS Blog",
-      link: "https://waqqar.vercel.app/",
+      internalLink: "/nextjs",
     },
     {
-      title: "HTML & CSS Blog",
-      link: "https://waqqar.vercel.app/",
+      title: "System Design Blog",
+      internalLink: "/system-design",
     },
     {
-      title: "Interview Blog",
-      link: "https://waqqar.vercel.app/",
+      title: "Miscellaneous Blog",
+      internalLink: "/miscellaneous",
     },
   ];
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="blogs" className="blog-section">
       <span className="section-header-btn">Blogs</span>
-      <div className="project-cards">
+      <div className="blog-cards">
         {blogs.map((blog, index) => (
           <BlogContentCard key={index} blog={blog} />
         ))}
