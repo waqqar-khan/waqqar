@@ -30,22 +30,22 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/about-me" onClick={toggleMenu}>
               About Me
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/blogs" onClick={toggleMenu}>
               Blogs
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/recommendations" onClick={toggleMenu}>
               Recommendations
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/contact-me" onClick={toggleMenu}>
               Contact Me
             </Link>
           </li>
