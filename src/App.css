@@ -76,6 +76,20 @@ nav ul li a:hover {
   align-items: center;
   padding: 1rem;
 }
+.home-section,
+.recommendations-section {
+  padding: 7rem 0 0 0;
+}
+
+.about-me-section,
+.skills-section {
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.blog-section,
+.contact-me-section {
+  padding: 7rem 0 0.5rem 0;
+}
 
 .home-section,
 .skills-section,
@@ -85,7 +99,6 @@ nav ul li a:hover {
 .contact-me-section {
   text-align: center;
   background-color: #f4f4f4;
-  padding: 7rem 0 0.5rem 0;
 }
 
 .home-section {
@@ -104,10 +117,6 @@ nav ul li a:hover {
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-}
-
-.portfolio-heading-start {
-  color: #b315c5;
 }
 
 @keyframes colorChange {
@@ -248,7 +257,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  color: #372c39;
+  color: rgb(129, 128, 128);
 }
 
 .portfolio-sub-heading::after {
@@ -321,7 +330,6 @@ nav ul li a:hover {
   width: 100%;
   background-color: #f4f4f4;
   border-radius: 8px;
-  margin-top: 2rem;
 }
 
 .skills-section h3 {
@@ -353,7 +361,7 @@ nav ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
 }
 
 .about-me-text {
@@ -592,7 +600,7 @@ nav ul li a:hover {
 }
 
 #contact-me {
-  padding: 8rem 0;
+  padding: 35dvh 0;
   background-color: #f4f4f4;
   margin-bottom: 0;
 }
@@ -626,11 +634,11 @@ nav ul li a:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 0.5rem;
-    background-color: #b315c5;
-    color: #fff;
-    width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #b315c5;
+  color: #fff;
+  width: 100%;
 }
 
 .footer {
@@ -708,10 +716,16 @@ footer {
   }
 
   .home-section,
-  .skills-section,
+  .recommendations-section {
+    padding: 5rem 0 0 0;
+  }
+
   .about-me-section,
+  .skills-section {
+    padding: 0 0 0.5rem 0;
+  }
+
   .blog-section,
-  .recommendations-section,
   .contact-me-section {
     padding: 5rem 0 0.5rem 0;
   }

@@ -6,9 +6,9 @@ const AboutMe = () => {
       <span className="section-header-btn">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
-          <h3>Senior Frontend Developer (React.JS)</h3>
+          <h3>Senior Software Engineer</h3>
           <p>
-            Seasoned in the world of Frontend development, with a robust
+            Seasoned in the world of Software Development, with a robust
             background spanning over 4 years, I bring forth exceptional
             expertise as a frontend developer. My journey in the tech realm has
             seen me excel in multiple domains, including Enterprise Platform
@@ -31,7 +31,7 @@ const AboutMe = () => {
           </p>
           <p>
             Beyond the lines of code, I&#39;ve worn the hat of a Technical
-            Interviewer, conducting over 500 interviews. This perspective has
+            Interviewer, conducted 100+ interviews. This perspective has
             enriched my skills, enhancing my ability to gauge and recognize
             top-tier talent. Furthermore, my stint as a Management Trainee
             during my bachelor&#39;s degree has provided me with a unique
@@ -42,10 +42,9 @@ const AboutMe = () => {
             the art of UI development leadership, offering guidance and
             mentorship to fellow developers while consistently delivering
             outcomes that redefine user experiences. My toolkit includes Full
-            Stack Development, Mobile Development, Web Development, ReactJS,
-            React Native, Redux, NodeJS, ExpressJS, Mongoose, MySQL, and
-            JavaScript, backed by a deep understanding of project management
-            tools and collaborative platforms.
+            Stack Development, Web Development, JavaScript, ReactJS, Next JS,
+            Redux, MySQL and many more. I possess a deep understanding of project
+            management tools and collaborative platforms.
           </p>
           <p>
             In the ever-evolving landscape of web development, I&#39;m a

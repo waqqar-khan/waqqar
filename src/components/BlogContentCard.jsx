@@ -5,8 +5,8 @@ import "../App.css";
 const BlogContentCard = ({ blog }) => {
   return (
     <div className="blog-card">
-      <h3>{blog.title}</h3>
-      <Link to={blog.internalLink}>Read More</Link>
+      <h3 className='text-xl text-center font-bold text-pink-800'>{blog.title}</h3>
+      <Link to={blog.internalLink}>Read Blog</Link>
     </div>
   );
 };

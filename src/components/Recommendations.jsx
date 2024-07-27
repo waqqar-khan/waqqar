@@ -10,6 +10,7 @@ import anshumanTripathiImage from "../assets/anshuman-tripathi.jpg";
 import manojRaveendranImage from "../assets/manoj-raveendran.jpg";
 import viratSinghImage from "../assets/virat-singh.jpg";
 import "../App.css";
+import Skills from "./Skills";
 
 const Recommendations = () => {
   const recommendations = [
@@ -94,18 +95,21 @@ Overall, I can recommend that Waqar is an incredibly talented and hardworking de
   };
 
   return (
-    <div id="recommendations">
-      <span id="recommendation-header-btn" className="section-header-btn">
-        Recommendations
-      </span>
-      <section className="recommendations-section">
-        <Slider {...settings}>
-          {recommendations.map((recommendation, index) => (
-            <RecommendationCard key={index} recommendation={recommendation} />
-          ))}
-        </Slider>
-      </section>
-    </div>
+    <>
+      <div id="recommendations">
+        <span id="recommendation-header-btn" className="section-header-btn">
+          Recommendations
+        </span>
+        <section className="recommendations-section">
+          <Slider {...settings}>
+            {recommendations.map((recommendation, index) => (
+              <RecommendationCard key={index} recommendation={recommendation} />
+            ))}
+          </Slider>
+        </section>
+      </div>
+      <Skills />
+    </>
   );
 };
 

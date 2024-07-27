@@ -1,7 +1,6 @@
 import '../../App.css';
 
 const ReactJSBlog = () => {
-  console.log('ReactJSBlog component is rendered');
   const qnaList = [
     {
       question: "What are the most costly operations in React?",
