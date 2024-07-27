@@ -5,23 +5,23 @@ const Blogs = () => {
   const blogs = [
     {
       title: "JavaScript Blog",
-      internalLink: "/javascript",
+      internalLink: "/blogs/javascript",
     },
     {
       title: "React JS Blog",
-      internalLink: "/reactjs",
+      internalLink: "/blogs/reactjs",
     },
     {
       title: "Next JS Blog",
-      internalLink: "/nextjs",
+      internalLink: "/blogs/nextjs",
     },
     {
       title: "System Design Blog",
-      internalLink: "/system-design",
+      internalLink: "/blogs/system-design",
     },
     {
       title: "Miscellaneous Blog",
-      internalLink: "/miscellaneous",
+      internalLink: "/blogs/miscellaneous",
     },
   ];
 

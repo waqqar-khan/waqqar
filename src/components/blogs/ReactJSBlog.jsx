@@ -1,6 +1,7 @@
 import '../../App.css';
 
 const ReactJSBlog = () => {
+  console.log('ReactJSBlog component is rendered');
   const qnaList = [
     {
       question: "What are the most costly operations in React?",
@@ -49,15 +50,15 @@ const ReactJSBlog = () => {
 ];
 
     return (
-      <div className='blog-container'>
-        <h1 className='blog-header'>React JS Blog</h1>
-        {qnaList.map((qa, index) => (
-          <div key={index} className='blog-qaContainer'>
-            <h2 className='blog-question'>{qa.question}</h2>
-            <p className='blog-answer'>{qa.answer}</p>
-          </div>
-        ))}
-      </div>
+      <div className="w-full max-w-4xl mx-auto p-5 font-sans mt-20">
+      <h1 className="text-xl text-center text-blue-700 font-bold pt-6 pb-8">REACT JS BLOG</h1>
+      {qnaList.map((qa, index) => (
+        <div key={index} className="mb-5 pb-3 border-b border-gray-300">
+          <h2 className="text-lg text-gray-800">{qa.question}</h2>
+          <p className="text-gray-600">{qa.answer}</p>
+        </div>
+      ))}
+    </div>
     );
   };
 

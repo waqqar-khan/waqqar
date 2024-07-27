@@ -25,15 +25,15 @@ const MiscellaneousBlog = () => {
 ];
 
     return (
-      <div className='blog-container'>
-        <h1 className='blog-header'>Miscellaneous Blog</h1>
-        {qnaList.map((qa, index) => (
-          <div key={index} className='blog-qaContainer'>
-            <h2 className='blog-question'>{qa.question}</h2>
-            <p className='blog-answer'>{qa.answer}</p>
-          </div>
-        ))}
-      </div>
+      <div className="w-full max-w-4xl mx-auto p-5 font-sans mt-20">
+      <h1 className="text-xl text-center text-cyan-500 font-bold pt-6 pb-8">MISCELLANEOUS CONCEPTS</h1>
+      {qnaList.map((qa, index) => (
+        <div key={index} className="mb-5 pb-3 border-b border-gray-300">
+          <h2 className="text-lg text-gray-800">{qa.question}</h2>
+          <p className="text-gray-600">{qa.answer}</p>
+        </div>
+      ))}
+    </div>
     );
   };
 

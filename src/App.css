@@ -7,12 +7,24 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
 }
 
 .App {
   width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.content {
+  flex: 1;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -30,6 +42,9 @@ header {
 }
 
 header h1 {
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -63,12 +78,14 @@ nav ul li a:hover {
 }
 
 .home-section,
+.skills-section,
 .about-me-section,
 .blog-section,
 .recommendations-section,
 .contact-me-section {
   text-align: center;
   background-color: #f4f4f4;
+  padding: 7rem 0 0.5rem 0;
 }
 
 .home-section {
@@ -263,7 +280,7 @@ nav ul li a:hover {
 }
 
 .company-logo img {
-  width: 400px;
+  width: 350px;
   height: auto;
   object-fit: contain;
   border: 1px solid #ddd;
@@ -290,18 +307,19 @@ nav ul li a:hover {
   background-color: #b315c5;
   color: #fff;
   display: block;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   font-weight: 700;
   font-size: x-large;
   text-transform: uppercase;
-  width: 100%;
-  margin: 0;
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
+  border-radius: 5px;
 }
 
 .skills-section {
   width: 100%;
-  background: #fff;
+  background-color: #f4f4f4;
   border-radius: 8px;
   margin-top: 2rem;
 }
@@ -451,7 +469,7 @@ nav ul li a:hover {
 }
 
 #recommendations {
-  padding-top: 3rem;
+  padding-top: 5.5rem;
 }
 
 #recommendation-header-btn {
@@ -464,7 +482,7 @@ nav ul li a:hover {
 .recommendations-section {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
 }
 
 .recommendations-section h2 {
@@ -574,7 +592,7 @@ nav ul li a:hover {
 }
 
 #contact-me {
-  padding: 0 0 1rem 0;
+  padding: 8rem 0;
   background-color: #f4f4f4;
   margin-bottom: 0;
 }
@@ -584,6 +602,7 @@ nav ul li a:hover {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-style: italic;
+  margin-top: 1rem;
 }
 
 .contact-me-btn {
@@ -606,13 +625,11 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-footer {
+.footer {
   text-align: center;
-  padding: 0.1rem;
+  padding: 0.5rem;
   background-color: #b315c5;
   color: #fff;
-  position: sticky;
-  bottom: 0;
   width: 100%;
 }
 
@@ -680,6 +697,15 @@ footer {
     background-color: #fff;
     margin: 4px 0;
     transition: transform 0.3s ease;
+  }
+
+  .home-section,
+  .skills-section,
+  .about-me-section,
+  .blog-section,
+  .recommendations-section,
+  .contact-me-section {
+    padding: 5rem 0 0.5rem 0;
   }
 
   .profile-image {
@@ -809,5 +835,13 @@ footer {
 
   .slick-next {
     right: 0;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #b315c5;
+    color: #fff;
+    width: 100%;
   }
 }

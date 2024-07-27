@@ -5,9 +5,9 @@ import "../App.css";
 
 const MainLayout = () => {
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-      <main>
+      <main className="content">
         <Outlet />
       </main>
       <Footer />
