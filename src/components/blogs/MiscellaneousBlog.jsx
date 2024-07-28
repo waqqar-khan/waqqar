@@ -1,5 +1,4 @@
 import "../../App.css";
-import BlogButton from "./BlogButton";
 
 const MiscellaneousBlog = () => {
   const qnaList = [
@@ -20,22 +19,27 @@ const MiscellaneousBlog = () => {
         "CI is the practice of automatically testing and integrating code changes into a shared repository frequently. CD extends this by automatically deploying changes to production, ensuring rapid and reliable releases.",
     },
     {
-      question:
-        "What are microservices and how do they differ from monolithic architecture?",
-      answer:
-        "Microservices are a design pattern where an application is composed of small, independent services that communicate over APIs. This contrasts with monolithic architecture, where the entire application is built as a single, unified unit.",
-    },
-    {
       question: "What is the purpose of a Service Worker?",
       answer:
         "A Service Worker is a script that runs in the background and can intercept network requests, cache resources, and enable offline functionality, improving performance and user experience.",
     },
+    {
+      question:
+        "How does the caret (^) and tilde (~) symbols affect package versions in package.json?",
+      answer:
+        "The caret (^) will update to a minor patch update version, and the tilde (~) will update to a major patch update version. It is always safer to update to a minor version because a major version may break many things​.",
+    },
+    {
+      question:
+        "What is the difference between package-lock.json and package.json?",
+      answer:
+        "package-lock.json records the exact version of each package installed, while package.json records the version ranges. Both files should be committed to GitHub to ensure consistency across environments.",
+    },
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-5 pt-12 font-sans mt-14">
-      <BlogButton />
-      <h1 className="italic text-2xl text-center text-red-700 font-mono font-semibold pb-8">
+    <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
+      <h1 className="italic text-2xl text-center text-red-700 font-serif font-semibold pb-8">
         MISCELLANEOUS CONCEPTS
       </h1>
       {qnaList.map((qa, index) => (

@@ -1,28 +1,11 @@
-import { useEffect } from "react";
 import "../../App.css";
-import BlogButton from "./BlogButton";
 
 const ReactJSBlog = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const qnaList = [
     {
       question: "What are the most costly operations in React?",
       answer:
         "The most costly operations occur when the DOM tree needs to change in our browser (e.g., you click a button and something pops up).",
-    },
-    {
-      question:
-        "How does the caret (^) and tilde (~) symbols affect package versions in package.json?",
-      answer:
-        "The caret (^) will update to a minor patch update version, and the tilde (~) will update to a major patch update version. It is always safer to update to a minor version because a major version may break many things​.",
-    },
-    {
-      question:
-        "What is the difference between package-lock.json and package.json?",
-      answer:
-        "package-lock.json records the exact version of each package installed, while package.json records the version ranges. Both files should be committed to GitHub to ensure consistency across environments.",
     },
     {
       question: "What is npx used for in React?",
@@ -68,9 +51,8 @@ const ReactJSBlog = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-5 pt-12 font-sans mt-14">
-      <BlogButton />
-      <h1 className="italic text-2xl text-center text-red-700 font-mono font-semibold pb-8">
+    <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
+      <h1 className="italic text-2xl text-center text-red-700 font-serif font-semibold pb-8">
         REACT JS BLOG
       </h1>
       {qnaList.map((qa, index) => (

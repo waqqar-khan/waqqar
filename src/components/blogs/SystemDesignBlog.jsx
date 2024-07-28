@@ -1,18 +1,18 @@
 import "../../App.css";
-import BlogButton from "./BlogButton";
 
 const SystemDesignBlog = () => {
   const qnaList = [
     {
-      question: "When the System Design Content will be live?",
-      answer: "Coming Soooon....",
+      question:
+        "What are microservices and how do they differ from monolithic architecture?",
+      answer:
+        "Microservices are a design pattern where an application is composed of small, independent services that communicate over APIs. This contrasts with monolithic architecture, where the entire application is built as a single, unified unit.",
     },
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-5 pt-12 font-sans mt-14">
-      <BlogButton />
-      <h1 className="italic text-2xl text-center text-red-700 font-mono font-semibold pb-8">
+    <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
+      <h1 className="italic text-2xl text-center text-red-700 font-serif font-semibold pb-8">
         SYSTEM DESIGN BlOG
       </h1>
       {qnaList.map((qa, index) => (

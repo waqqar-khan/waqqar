@@ -1,5 +1,4 @@
 import "../../App.css";
-import BlogButton from "./BlogButton";
 
 const NextJSBlog = () => {
   const qnaList = [
@@ -32,9 +31,8 @@ const NextJSBlog = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-5 pt-12 font-sans mt-14">
-      <BlogButton />
-      <h1 className="italic text-2xl text-center text-red-700 font-mono font-semibold pb-8">
+    <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
+      <h1 className="italic text-2xl text-center text-red-700 font-serif font-semibold pb-8">
         NEXT JS BlOG
       </h1>
       {qnaList.map((qa, index) => (

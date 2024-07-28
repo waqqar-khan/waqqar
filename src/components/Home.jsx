@@ -22,9 +22,10 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <span className="portfolio-heading">Waqqar Khan</span>
+              <span className="text-sm">↗️</span>
             </a>
           </h1>
-          <h2 className="text-xl text-center font-bold text-gray-600">
+          <h2 className="lg:text-xl text-center lg:font-bold text-gray-600 portfolio-heading-title">
             Senior Software Engineer from India.
           </h2>
           <p className="portfolio-sub-heading">
