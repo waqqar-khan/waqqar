@@ -33,7 +33,7 @@ const MiscellaneousBlog = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-5 font-sans mt-14">
+    <div className="w-full max-w-4xl mx-auto p-5 pt-12 font-sans mt-14">
       <BlogButton />
       <h1 className="italic text-2xl text-center text-red-700 font-mono font-semibold pb-8">
         MISCELLANEOUS CONCEPTS
