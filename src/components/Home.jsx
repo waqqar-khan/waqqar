@@ -1,3 +1,4 @@
+import Blogs from "./Blogs";
 import AboutMe from "./AboutMe";
 
 import "../App.css";
@@ -6,6 +7,7 @@ import profileImage from "../assets/profile-image.jpg";
 import AccentureLogo from "../assets/accenture.png";
 import SavantisLogo from "../assets/savantis.png";
 import StatusNeoLogo from "../assets/statusneo.png";
+import Skills from "./Skills";
 
 const Home = () => {
   return (
@@ -13,11 +15,17 @@ const Home = () => {
       <section id="home" className="home-section">
         <div className="profile-content">
           <img src={profileImage} alt="Profile" className="profile-image" />
-          <h1 className="text-2xl text-center text-purple-600 font-bold">
-            My Name is <span className="portfolio-heading">Waqqar Khan</span>
+          <h1 className="text-2xl text-center font-bold bg-transparent border-4 border-transparent rounded-lg py-2 px-4 hover:bg-purple-800 hover:border-purple-300 hover:cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/waqqar-khan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="portfolio-heading">Waqqar Khan</span>
+            </a>
           </h1>
-          <h2 className="text-xl text-center font-bold text-gray-600 ">
-            I am a Senior Software Engineer from India.
+          <h2 className="text-xl text-center font-bold text-gray-600">
+            Senior Software Engineer from India.
           </h2>
           <p className="portfolio-sub-heading">
             For learning purpose, please explore blogs...
@@ -56,6 +64,8 @@ const Home = () => {
           <h1 className="company-past-org">Past Organisations</h1>
         </div>
       </section>
+      <Skills />
+      <Blogs />
       <AboutMe />
     </>
   );

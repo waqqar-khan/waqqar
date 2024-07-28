@@ -3,7 +3,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-hex': 'rgba(220, 8, 240, 0.588)',
+        'custom-rgba': 'rgba(123, 22, 105, 0.953)',
+      },
+    },
   },
   plugins: [],
 }

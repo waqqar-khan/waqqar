@@ -2,7 +2,7 @@ import "../App.css";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="about-me-section">
+    <section id="about-me" className="about-me-section pt-10">
       <span className="section-header-btn">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
@@ -43,8 +43,8 @@ const AboutMe = () => {
             mentorship to fellow developers while consistently delivering
             outcomes that redefine user experiences. My toolkit includes Full
             Stack Development, Web Development, JavaScript, ReactJS, Next JS,
-            Redux, MySQL and many more. I possess a deep understanding of project
-            management tools and collaborative platforms.
+            Redux, MySQL and many more. I possess a deep understanding of
+            project management tools and collaborative platforms.
           </p>
           <p>
             In the ever-evolving landscape of web development, I&#39;m a
