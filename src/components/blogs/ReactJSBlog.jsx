@@ -57,7 +57,7 @@ const ReactJSBlog = () => {
       </h1>
       {qnaList.map((qa, index) => (
         <div key={index} className="mb-5 pb-3 border-b border-gray-300">
-          <h2 className="text-lg text-gray-800">{qa.question}</h2>
+          <h2 className="text-lg text-black">{qa.question}</h2>
           <p className="text-gray-600">{qa.answer}</p>
         </div>
       ))}

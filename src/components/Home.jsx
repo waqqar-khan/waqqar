@@ -8,6 +8,7 @@ import AccentureLogo from "../assets/accenture.png";
 import SavantisLogo from "../assets/savantis.png";
 import StatusNeoLogo from "../assets/statusneo.png";
 import Skills from "./Skills";
+import Certificates from "./Cerificates";
 
 const Home = () => {
   return (
@@ -68,6 +69,7 @@ const Home = () => {
       <Skills />
       <Blogs />
       <AboutMe />
+      <Certificates />
     </>
   );
 };

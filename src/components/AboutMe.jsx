@@ -23,19 +23,19 @@ const AboutMe = () => {
             streamlined and efficient development.
           </p>
           <p>
-            With an unwavering commitment to addressing customer pain points, I
-            utilize my extensive experience to create solutions that resonate.
-            I&#39;ve successfully contributed to countless projects by embracing
-            both Agile and Waterfall methodologies, bringing flexibility and
-            structure to each initiative.
-          </p>
-          <p>
             Beyond the lines of code, I&#39;ve worn the hat of a Technical
             Interviewer, conducted 100+ interviews. This perspective has
             enriched my skills, enhancing my ability to gauge and recognize
             top-tier talent. Furthermore, my stint as a Management Trainee
             during my bachelor&#39;s degree has provided me with a unique
             perspective on organizational dynamics and effective collaboration.
+          </p>
+          <p>
+            With an unwavering commitment to addressing customer pain points, I
+            utilize my extensive experience to create solutions that resonate.
+            I&#39;ve successfully contributed to countless projects by embracing
+            both Agile and Waterfall methodologies, bringing flexibility and
+            structure to each initiative.
           </p>
           <p>
             My prowess extends beyond technical prowess alone. I&#39;ve honed
@@ -48,12 +48,8 @@ const AboutMe = () => {
           </p>
           <p>
             In the ever-evolving landscape of web development, I&#39;m a
-            catalyst for innovation. I thrive on pushing boundaries and crafting
-            solutions that excel not only in technical rigor but also in
-            exceeding user expectations. With a blend of comprehensive skills,
-            an unwavering commitment to excellence, and a passion for driving
-            impactful projects, I&#39;m poised to thrive in even the most
-            complex development scenarios.
+            catalyst for innovation. I passion for crafting solutions that excel
+            not only in technical rigor but also in exceeding user expectations.
           </p>
         </div>
       </div>
