@@ -9,7 +9,7 @@ const BlogContentCard = ({ blog }) => {
         {blog.title}
       </h3>
       <div>
-        <Link to={blog.internalLink} className="blog-card-link font-semibold text-white bg-purple-500 mt-4 px-4 py-2 hover:bg-purple-600 hover:text-yellow-500">Read Blog</Link>
+        <Link to={blog.internalLink} className="blog-card-link font-semibold text-white bg-purple-500 mt-4 px-4 py-2 hover:bg-purple-600 hover:text-yellow-500">Click to Read Blog</Link>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const SystemDesignBlog = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
-      <h1 className="italic text-2xl text-center text-red-700 font-serif font-semibold pb-8">
+      <h1 className="italic text-2xl text-center text-purple-800 font-serif font-semibold pb-8">
         SYSTEM DESIGN BlOG
       </h1>
       {qnaList.map((qa, index) => (

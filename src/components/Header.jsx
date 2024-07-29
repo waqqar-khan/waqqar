@@ -54,7 +54,7 @@ const Header = () => {
         )}
       </div>
       {isMobileMenuOpen && isBlogPath && (
-        <div className="md:hidden absolute top-full right-0 w-full bg-custom-header-hex pb-2 transition-transform transform">
+        <div className="md:hidden absolute top-full right-0 w-full bg-purple-700 pt-1 pb-2 transition-transform transform">
           <BlogButton />
         </div>
       )}

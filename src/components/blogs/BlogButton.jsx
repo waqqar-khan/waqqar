@@ -10,9 +10,9 @@ const BlogButton = () => {
         <button
           className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/javascript"
-              ? "bg-purple-500 italic"
-              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
-          } text-white`}
+              ? "bg-purple-500 italic text-yellow-400"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500 text-white"
+          }`}
           disabled={currentPath === "/javascript"}
         >
           JavaScript
@@ -22,9 +22,9 @@ const BlogButton = () => {
         <button
           className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/reactjs"
-              ? "bg-purple-500 italic"
-              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
-          } text-white`}
+              ? "bg-purple-500 italic text-yellow-400"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500 text-white"
+          }`}
           disabled={currentPath === "/reactjs"}
         >
           React JS
@@ -34,9 +34,9 @@ const BlogButton = () => {
         <button
           className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/nextjs"
-              ? "bg-purple-500 italic"
-              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
-          } text-white`}
+              ? "bg-purple-500 italic text-yellow-400"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500 text-white"
+          }`}
           disabled={currentPath === "/nextjs"}
         >
           Next JS
@@ -46,9 +46,9 @@ const BlogButton = () => {
         <button
           className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/system-design"
-              ? "bg-purple-500 italic"
-              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
-          } text-white`}
+              ? "bg-purple-500 italic text-yellow-400"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500 text-white"
+          }`}
           disabled={currentPath === "/system-design"}
         >
           System Design
@@ -58,9 +58,9 @@ const BlogButton = () => {
         <button
           className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/miscellaneous"
-              ? "bg-purple-500 italic"
-              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
-          } text-white`}
+              ? "bg-purple-500 italic text-yellow-400"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500 text-white"
+          }`}
           disabled={currentPath === "/miscellaneous"}
         >
           Miscellaneous

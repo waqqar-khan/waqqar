@@ -28,7 +28,7 @@ body {
 .content {
   flex: 1;
   background-color: #f4f4f4;
-  max-width: 1900px;
+  max-width: 1600px;
   margin: 0 auto;
   width: 100%;
   padding: 0 1rem; 
@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 @keyframes colorChange {
   0% {
-    color: #e4fc0a;
+    color: #daf011ec;
   }
   10% {
     color: #ff5733;
@@ -108,13 +108,13 @@ nav ul li a:hover {
     color: #33d4ff;
   }
   70% {
-    color: #ef4d20ea;
+    color: #f54c1e;
   }
   80% {
     color: #dade0ffc;
   }
   90% {
-    color: #cd3f1fbd;
+    color: #e60ffaea;
   }
   100% {
     color: #09eaf1;
@@ -122,7 +122,7 @@ nav ul li a:hover {
 }
 
 .portfolio-heading {
-  animation: colorChange 15s infinite;
+  animation: colorChange 20s infinite;
 }
 
 @keyframes typing {
@@ -223,7 +223,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  color: rgb(129, 128, 128);
+  color: rgb(116, 115, 117);
   font-size: large;
 }
 
@@ -327,7 +327,7 @@ nav ul li a:hover {
 .about-me-text {
   text-align: left;
   margin: 1rem;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 .about-me-text h3 {
@@ -460,20 +460,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  .content {
+    padding: 0 0;
   }
+
   .home-section {
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0 4rem;
-  }
-
-  .home-section,
-  .recommendations-section {
-    padding: 5rem 0 0 0;
+    padding: 4rem 0 1rem;
   }
 
   .about-me-section,

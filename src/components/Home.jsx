@@ -16,7 +16,7 @@ const Home = () => {
       <section id="home" className="home-section">
         <div className="profile-content">
           <img src={profileImage} alt="Profile" className="profile-image" />
-          <h1 className="text-2xl text-center font-bold bg-transparent border-4 border-transparent rounded-lg py-2 px-4 hover:bg-purple-800 hover:border-purple-300 hover:cursor-pointer">
+          <h1 className="text-2xl text-center font-bold border-4 rounded-lg py-2 px-4 bg-purple-800 border-purple-300 hover:cursor-pointer">
             <a
               href="https://www.linkedin.com/in/waqqar"
               target="_blank"
