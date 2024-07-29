@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className="fixed w-full flex justify-between items-center p-4 bg-custom-header-hex text-white z-50">
       <div className="header-content">
-        <Link to="/" className="hover:cursor-pointer focus:outline-none">
+        <Link to="/" className="hover:cursor-pointer">
           <h1 className="text-xl font-bold font-sans transition-colors hover:text-yellow-500 focus:text-white">
             WAQQAR KHAN
           </h1>
