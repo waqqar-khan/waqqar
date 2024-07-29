@@ -3,7 +3,7 @@ import "../App.css";
 const AboutMe = () => {
   return (
     <section id="about-me" className="about-me-section pt-10">
-      <span className="section-header-btn">About Me</span>
+      <span className="section-header-btn bg-purple-600 text-white">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
           <h3>Senior Software Engineer</h3>

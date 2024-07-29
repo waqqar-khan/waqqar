@@ -57,10 +57,6 @@ nav ul li a:hover {
   color: #f600fa;
 }
 
-.home-section {
-  padding: 7rem 0 0 0;
-}
-
 .home-section,
 .skills-section,
 .about-me-section,
@@ -272,20 +268,14 @@ nav ul li a:hover {
 }
 
 .company-past-org {
-  background-color: #ba0dba;
-  color: #fefefb;
   padding: 1rem;
   font-weight: bold;
-  font-size: large;
   text-transform: uppercase;
-  margin-top: 0.5rem;
   border-radius: 5px;
   text-align: center;
 }
 
 .section-header-btn {
-  background-color: #b315c5;
-  color: #fff;
   display: block;
   padding: 0.5rem 0;
   font-weight: 700;
@@ -389,36 +379,21 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #dc08f096;
-  color: #fff;
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   text-transform: uppercase;
 }
 
-.blog-card p {
-  color: #333;
-  padding-top: 1.5rem;
-  font-size: medium;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
-}
-
-.blog-card a {
+.blog-card-link{
   display: block;
-  background-color: #dc08f096;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
   text-align: center;
 }
 
-.blog-card a:hover {
-  background-color: rgba(123, 22, 105, 0.953);
+.blog-card-link:hover {
   text-decoration: none;
 }
 
@@ -465,16 +440,12 @@ nav ul li a:hover {
 footer {
   text-align: center;
   padding: 0.5rem;
-  background-color: #b315c5;
-  color: #fff;
   width: 100%;
 }
 
 .footer {
   text-align: center;
   padding: 0.5rem;
-  background-color: #b315c5;
-  color: #fff;
   width: 100%;
 }
 
@@ -642,8 +613,6 @@ footer {
   .footer {
     text-align: center;
     padding: 0.5rem;
-    background-color: #b315c5;
-    color: #fff;
     width: 100%;
   }
 }

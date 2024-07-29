@@ -63,7 +63,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <h1 className="company-past-org">Past Organisations</h1>
+          <h1 className="company-past-org bg-purple-500 text-yellow-300 text-xl mt-2">Past Organisations</h1>
         </div>
       </section>
       <Skills />

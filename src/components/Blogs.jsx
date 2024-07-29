@@ -27,8 +27,8 @@ const Blogs = () => {
 
   return (
     <section id="blogs" className="blog-section">
-      <span className="section-header-btn">Blogs</span>
-      <div className="blog-cards">
+      <span className="section-header-btn bg-purple-600 text-white">Blogs</span>
+      <div className="blog-cards ">
         {blogs.map((blog, index) => (
           <BlogContentCard key={index} blog={blog} />
         ))}

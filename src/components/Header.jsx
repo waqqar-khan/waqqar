@@ -5,29 +5,35 @@ import "../App.css";
 
 const Header = () => {
   const location = useLocation();
-  const currentPath = location.pathname;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const isBlogPath = [
+    "/javascript",
+    "/reactjs",
+    "/nextjs",
+    "/system-design",
+    "/miscellaneous"
+  ].includes(location.pathname);
+
+  const isHomePage = location.pathname === "/";
+
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(prev => !prev);
   };
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [currentPath]);
-
-  const isBlogPath =
-    currentPath === "/javascript" ||
-    currentPath === "/reactjs" ||
-    currentPath === "/nextjs" ||
-    currentPath === "/system-design" ||
-    currentPath === "/miscellaneous";
+  }, [location.pathname]);
 
   return (
-    <header className="fixed w-full flex justify-between items-center p-4 bg-custom-header-hex text-white z-50">
+    <header className="fixed w-full flex justify-between items-center p-4 bg-purple-700 text-white z-50">
       <div className="header-content">
-        <Link to="/" className="hover:cursor-pointer">
-          <h1 className="text-xl font-bold font-sans transition-colors hover:text-yellow-500 focus:text-white">
+        <Link to="/">
+          <h1
+            className={`text-2xl font-bold font-sans transition-colors ${
+              isHomePage ? "text-white cursor-default" : "text-white hover:cursor-pointer hover:text-yellow-500"
+            }`}
+          >
             WAQQAR KHAN
           </h1>
         </Link>
@@ -48,7 +54,7 @@ const Header = () => {
         )}
       </div>
       {isMobileMenuOpen && isBlogPath && (
-        <div className="md:hidden absolute top-full right-0 w-full bg-custom-header-hex pb-2">
+        <div className="md:hidden absolute top-full right-0 w-full bg-custom-header-hex pb-2 transition-transform transform">
           <BlogButton />
         </div>
       )}

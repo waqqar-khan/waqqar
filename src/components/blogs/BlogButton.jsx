@@ -8,10 +8,10 @@ const BlogButton = () => {
     <div className="flex flex-wrap justify-center items-center gap-4">
       <Link to="/javascript">
         <button
-          className={`px-4 py-2 rounded font-semibold ${
+          className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/javascript"
-              ? "bg-custom-rgba italic"
-              : "bg-custom-hex hover:text-yellow-500"
+              ? "bg-purple-500 italic"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
           } text-white`}
           disabled={currentPath === "/javascript"}
         >
@@ -20,10 +20,10 @@ const BlogButton = () => {
       </Link>
       <Link to="/reactjs">
         <button
-          className={`px-4 py-2 rounded font-semibold ${
+          className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/reactjs"
-              ? "bg-custom-rgba italic"
-              : "bg-custom-hex hover:text-yellow-500"
+              ? "bg-purple-500 italic"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
           } text-white`}
           disabled={currentPath === "/reactjs"}
         >
@@ -32,10 +32,10 @@ const BlogButton = () => {
       </Link>
       <Link to="/nextjs">
         <button
-          className={`px-4 py-2 rounded font-semibold ${
+          className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/nextjs"
-              ? "bg-custom-rgba italic"
-              : "bg-custom-hex hover:text-yellow-500"
+              ? "bg-purple-500 italic"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
           } text-white`}
           disabled={currentPath === "/nextjs"}
         >
@@ -44,10 +44,10 @@ const BlogButton = () => {
       </Link>
       <Link to="/system-design">
         <button
-          className={`px-4 py-2 rounded font-semibold ${
+          className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/system-design"
-              ? "bg-custom-rgba italic"
-              : "bg-custom-hex hover:text-yellow-500"
+              ? "bg-purple-500 italic"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
           } text-white`}
           disabled={currentPath === "/system-design"}
         >
@@ -56,10 +56,10 @@ const BlogButton = () => {
       </Link>
       <Link to="/miscellaneous">
         <button
-          className={`px-4 py-2 rounded font-semibold ${
+          className={`px-4 py-1 rounded font-semibold ${
             currentPath === "/miscellaneous"
-              ? "bg-custom-rgba italic"
-              : "bg-custom-hex hover:text-yellow-500"
+              ? "bg-purple-500 italic"
+              : "bg-purple-800 hover:text-yellow-500 hover:bg-purple-500"
           } text-white`}
           disabled={currentPath === "/miscellaneous"}
         >

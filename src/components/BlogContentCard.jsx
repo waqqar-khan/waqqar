@@ -4,11 +4,13 @@ import "../App.css";
 
 const BlogContentCard = ({ blog }) => {
   return (
-    <div className="blog-card">
-      <h3 className="text-xl text-center font-bold text-pink-800">
+    <div className="blog-card bg-purple-400">
+      <h3 className="text-xl text-center font-bold text-yellow-300">
         {blog.title}
       </h3>
-      <Link to={blog.internalLink}>Read Blog</Link>
+      <div>
+        <Link to={blog.internalLink} className="blog-card-link font-semibold text-white bg-purple-500 mt-4 px-4 py-2 hover:bg-purple-600 hover:text-yellow-500">Read Blog</Link>
+      </div>
     </div>
   );
 };

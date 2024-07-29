@@ -31,7 +31,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section">
-      <span className="section-header-btn">Skills</span>
+      <span className="section-header-btn bg-purple-600 text-white">Skills</span>
       <div className="skills-carousel">
         <Marquee gradient={false} speed={35}>
           {skills.map((skill, index) => (
