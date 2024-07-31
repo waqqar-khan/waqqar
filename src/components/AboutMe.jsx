@@ -6,7 +6,7 @@ const AboutMe = () => {
       <span className="section-header-btn bg-purple-600 text-white">About Me</span>
       <div className="about-me-content">
         <div className="about-me-text">
-          <h3>Senior Software Engineer</h3>
+          <h3>Senior Software Engineer (Frontend)</h3>
           <p>
             Seasoned in the world of Software Development, with a robust
             background spanning over 4 years, I bring forth exceptional

@@ -99,7 +99,7 @@ nav ul li a:hover {
     color: #ffbd33;
   }
   40% {
-    color: #ff33a8;
+    color: #119fdc;
   }
   50% {
     color: #07c30a;
@@ -122,7 +122,7 @@ nav ul li a:hover {
 }
 
 .portfolio-heading {
-  animation: colorChange 20s infinite;
+  animation: colorChange 15s infinite;
 }
 
 @keyframes typing {

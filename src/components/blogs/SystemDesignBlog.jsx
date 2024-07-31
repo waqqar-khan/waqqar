@@ -151,6 +151,8 @@ const SystemDesignBlog = () => {
     onItemsPerPageChange,
   } = usePagination(systemDesignQnaList, 10);
 
+  const startIndex = (currentPage - 1) * itemsPerPage + 1;
+
   return (
     <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
       <h1 className="italic text-2xl text-center text-purple-800 font-serif font-semibold pb-8">
@@ -158,7 +160,7 @@ const SystemDesignBlog = () => {
       </h1>
       {currentItems.map((qa, index) => (
         <div key={index} className="mb-5 pb-3 border-b border-gray-300">
-          <h2 className="text-lg text-black">{qa.question}</h2>
+          <h2 className="text-lg text-black">{startIndex + index}.&nbsp;{qa.question}</h2>
           <p className="text-gray-600">{qa.answer}</p>
         </div>
       ))}
