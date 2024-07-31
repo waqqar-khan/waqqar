@@ -1,5 +1,8 @@
 import "../../App.css";
 
+import Pagination from "../../feature/Pagination";
+import usePagination from "../../hooks/usePagination";
+
 const JavaScriptBlog = () => {
   const jsQnaList = [
     {
@@ -589,17 +592,34 @@ const JavaScriptBlog = () => {
     },
   ];
 
+  const {
+    currentPage,
+    itemsPerPage,
+    totalPages,
+    currentItems,
+    onPageChange,
+    onItemsPerPageChange,
+  } = usePagination(jsQnaList, 10);
+
   return (
     <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
       <h1 className="italic text-2xl text-center text-purple-800 font-serif font-semibold pb-8">
         JAVASCRIPT BlOG
       </h1>
-      {jsQnaList.map((qa, index) => (
+      {currentItems.map((qa, index) => (
         <div key={index} className="mb-5 pb-3 border-b border-gray-300">
           <h2 className="text-lg text-black">{qa.question}</h2>
           <p className="text-gray-600">{qa.answer}</p>
         </div>
       ))}
+      <Pagination
+        totalItems={jsQnaList.length}
+        itemsPerPage={itemsPerPage}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={onPageChange}
+        onItemsPerPageChange={onItemsPerPageChange}
+      />
     </div>
   );
 };

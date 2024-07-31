@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "../../App.css";
 
+import Pagination from "../../feature/Pagination";
+import usePagination from "../../hooks/usePagination";
+import Accordion from "../../feature/Accordion";
+
 const MiscellaneousBlog = () => {
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+
   const miscellaneousQnaList = [
     // **HTML**
     {
@@ -272,7 +279,7 @@ const MiscellaneousBlog = () => {
         "End-to-end testing frameworks like Cypress and Selenium offer several benefits: 1) Comprehensive testing of the entire application from the user's perspective. 2) Detection of integration and workflow issues that may not be caught by unit or integration tests. 3) Automation of repetitive testing tasks, improving efficiency and consistency. 4) Support for real-time debugging and interactive test running. 5) Detailed test reporting and visualization of test results, aiding in identifying and fixing issues.",
     },
 
-    // **Jest**
+    // **Jest & React Testing Library****
     {
       question:
         "What are some core features of Jest for testing JavaScript applications?",
@@ -301,8 +308,6 @@ const MiscellaneousBlog = () => {
       answer:
         "Jest's coverage report provides insights into the percentage of code covered by tests, including statement, branch, and function coverage. Use coverage reports to identify untested areas of code, ensuring that critical paths and edge cases are covered by tests. To generate a coverage report, run tests with the `--coverage` flag. Analyze the report to identify gaps in test coverage and improve code quality by writing additional tests for uncovered code paths.",
     },
-
-    // **React Testing Library**
     {
       question:
         "How does React Testing Library encourage testing components from a user's perspective?",
@@ -335,17 +340,114 @@ const MiscellaneousBlog = () => {
     },
   ];
 
+  const {
+    currentPage,
+    itemsPerPage,
+    totalPages,
+    currentItems,
+    onPageChange,
+    onItemsPerPageChange,
+  } = usePagination(miscellaneousQnaList, 10);
+
+  const sections = [
+    {
+      title: "HTML",
+      content: miscellaneousQnaList.filter((qna) => qna.category === "HTML"),
+    },
+    {
+      title: "CSS",
+      content: miscellaneousQnaList.filter((qna) => qna.category === "CSS"),
+    },
+    {
+      title: "Git & Github",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Git & Github"
+      ),
+    },
+    {
+      title: "Frontend Security",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Frontend Security"
+      ),
+    },
+    {
+      title: "Performance Optimization",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Performance Optimization"
+      ),
+    },
+    {
+      title: "Debugging",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Debugging"
+      ),
+    },
+    {
+      title: "Unit Testing",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Unit Testing"
+      ),
+    },
+    {
+      title: "Integration Testing",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Integration Testing"
+      ),
+    },
+    {
+      title: "End-to-End Testing",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "End-to-End Testing"
+      ),
+    },
+    {
+      title: "Jest & React Testing Library",
+      content: miscellaneousQnaList.filter(
+        (qna) => qna.category === "Jest & React Testing Library"
+      ),
+    },
+  ];
+
+  const handleSectionChange = (index) => {
+    setCurrentSectionIndex(index);
+  };
+
   return (
     <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
       <h1 className="italic text-2xl text-center text-purple-800 font-serif font-semibold pb-8">
         MISCELLANEOUS CONCEPTS
       </h1>
-      {miscellaneousQnaList.map((qa, index) => (
-        <div key={index} className="mb-5 pb-3 border-b border-gray-300">
-          <h2 className="text-lg text-black">{qa.question}</h2>
-          <p className="text-gray-600">{qa.answer}</p>
-        </div>
-      ))}
+      <Accordion
+        sections={sections.map((section) => ({
+          title: section.title,
+          content: (
+            <>
+              {currentSectionIndex === sections.indexOf(section) && (
+                <>
+                  {currentItems.map((qa, index) => (
+                    <div
+                      key={index}
+                      className="mb-5 pb-3 border-b border-gray-300"
+                    >
+                      <h2 className="text-lg text-black">{qa.question}</h2>
+                      <p className="text-gray-600">{qa.answer}</p>
+                    </div>
+                  ))}
+                  <Pagination
+                    totalItems={miscellaneousQnaList.length}
+                    itemsPerPage={itemsPerPage}
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={onPageChange}
+                    onItemsPerPageChange={onItemsPerPageChange}
+                  />
+                </>
+              )}
+            </>
+          ),
+        }))}
+        onSelectSection={handleSectionChange}
+      />
     </div>
   );
 };
