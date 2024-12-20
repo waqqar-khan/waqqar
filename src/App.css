@@ -313,6 +313,8 @@ nav ul li a:hover {
   width: 100px;
   height: 100px;
   object-fit: contain;
+  display: block;
+  margin: auto;
   transition: transform 0.3s ease-in-out;
 }
 

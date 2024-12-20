@@ -27,7 +27,7 @@ const Home = () => {
             </a>
           </h1>
           <h2 className="lg:text-xl text-center lg:font-bold text-gray-600 portfolio-heading-title">
-            Senior Software Engineer from India.
+            Software Engineer from India.
           </h2>
           <p className="portfolio-sub-heading">
             For learning purpose, please explore blogs...
@@ -66,9 +66,9 @@ const Home = () => {
           <h1 className="company-past-org bg-purple-500 text-yellow-300 text-xl mt-2">Past Organisations</h1>
         </div>
       </section>
-      <Skills />
       <Blogs />
       <AboutMe />
+      <Skills />
       <Certificates />
     </>
   );

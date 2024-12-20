@@ -3,54 +3,61 @@ import "../App.css";
 const AboutMe = () => {
   return (
     <section id="about-me" className="about-me-section pt-10">
-      <span className="section-header-btn bg-purple-600 text-white">About Me</span>
+      <span className="section-header-btn bg-purple-600 text-white">
+        About Me
+      </span>
       <div className="about-me-content">
-        <div className="about-me-text">
-          <h3>Senior Software Engineer (Frontend)</h3>
-          <p>
-            Seasoned in the world of Software Development, with a robust
-            background spanning over 4 years, I bring forth exceptional
-            expertise as a frontend developer. My journey in the tech realm has
-            seen me excel in multiple domains, including Enterprise Platform
-            Development, Retail, and E-commerce.
-          </p>
-          <p>
-            Having dedicated 3 years to mastering JavaScript and ReactJS, I
-            possess an innate understanding of crafting immersive web
-            experiences that captivate users. My dedication to delivering
-            solutions that matter is augmented by my role as a Certified Scrum
-            Product Owner® (CSPO®), championing agile methodologies that foster
-            streamlined and efficient development.
-          </p>
-          <p>
-            Beyond the lines of code, I&#39;ve worn the hat of a Technical
-            Interviewer, conducted 100+ interviews. This perspective has
-            enriched my skills, enhancing my ability to gauge and recognize
-            top-tier talent. Furthermore, my stint as a Management Trainee
-            during my bachelor&#39;s degree has provided me with a unique
-            perspective on organizational dynamics and effective collaboration.
-          </p>
-          <p>
-            With an unwavering commitment to addressing customer pain points, I
-            utilize my extensive experience to create solutions that resonate.
-            I&#39;ve successfully contributed to countless projects by embracing
-            both Agile and Waterfall methodologies, bringing flexibility and
-            structure to each initiative.
-          </p>
-          <p>
-            My prowess extends beyond technical prowess alone. I&#39;ve honed
-            the art of UI development leadership, offering guidance and
-            mentorship to fellow developers while consistently delivering
-            outcomes that redefine user experiences. My toolkit includes Full
-            Stack Development, Web Development, JavaScript, ReactJS, Next JS,
-            Redux, MySQL and many more. I possess a deep understanding of
-            project management tools and collaborative platforms.
-          </p>
-          <p>
-            In the ever-evolving landscape of web development, I&#39;m a
-            catalyst for innovation. I passion for crafting solutions that excel
-            not only in technical rigor but also in exceeding user expectations.
-          </p>
+        <div className="about-me-container max-w-4xl mx-auto p-5 mt-4">
+          <div className="about-me-text">
+            <h2 className="text-xl text-center font-bold text-purple-800 font-serif pb-4">
+              HackerRank Certified ReactJS Developer
+            </h2>
+            <p>
+              As a <strong>HackerRank Certified ReactJS Developer</strong> with
+              over <strong>4 years of experience</strong> (3 years specializing
+              in ReactJS), I have honed my skills in building scalable and
+              high-performance web applications. My expertise spans technologies
+              such as <strong>ReactJS</strong>, <strong>JavaScript</strong>,{" "}
+              <strong>TypeScript</strong>, <strong>Redux</strong>,{" "}
+              <strong>NextJS</strong>, <strong>Zustand</strong>, and{" "}
+              <strong>GraphQL</strong>, with a deep focus on{" "}
+              <strong>UI Engineering</strong> and delivering seamless user
+              experiences.
+            </p>
+            <p>
+              Over the years, I have excelled in areas such as{" "}
+              <strong>dynamic routing</strong>, <strong>lazy loading</strong>,{" "}
+              <strong>modular component architecture</strong>, and the creation
+              of <strong>reusable component libraries</strong>. I’m passionate
+              about optimizing application performance and ensuring robust,
+              maintainable code that scales. In addition to my core technical
+              skills, I am proficient in tools like{" "}
+              <strong>Tailwind CSS</strong>, <strong>Material UI</strong>,{" "}
+              <strong>MongoDB</strong>, <strong>Go/Golang</strong>,{" "}
+              <strong>Backstage.io</strong>, <strong>Microsoft Azure</strong>,
+              and <strong>GIT</strong>.
+            </p>
+            <p>
+              My journey as a developer has not only involved technical roles
+              but also the broader context of{" "}
+              <strong>Agile methodologies</strong> and{" "}
+              <strong>project management</strong>. I am a{" "}
+              <strong>Certified Scrum Product Owner® (CSPO®)</strong>, which has
+              allowed me to work closely with cross-functional teams to deliver
+              impactful solutions. I’ve also contributed significantly as a{" "}
+              <strong>Technical Interviewer</strong>, having conducted over{" "}
+              <strong>100 interviews</strong>, where I have sharpened my ability
+              to identify and mentor top-tier talent.
+            </p>
+            <p>
+              Throughout my career, I’ve worked in remote settings,
+              collaborating with global teams to deliver innovative solutions
+              that meet both technical and business goals. As a mentor, I
+              actively guide junior developers and foster a culture of
+              knowledge-sharing, ensuring that every team member grows while
+              delivering excellent user experiences.
+            </p>
+          </div>
         </div>
       </div>
     </section>
