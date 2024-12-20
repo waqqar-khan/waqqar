@@ -87,33 +87,33 @@ const MiscellaneousBlog = () => {
       question: "How do you resolve merge conflicts in Git?",
       answer:
         "Merge conflicts occur when changes in different branches cannot be automatically reconciled by Git. To resolve conflicts, follow these steps: 1) Use `git merge` or `git pull` to start the merge process. 2) Git will mark the files with conflicts. 3) Open the conflicted files, look for conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`), and manually edit the content to resolve the conflicts. 4) After resolving conflicts, use `git add` to stage the changes. 5) Complete the merge with `git commit`.",
-        category: "Git and Github",
+        category: "Git and GitHub",
     },
     {
       question: "What are Git tags and how are they used?",
       answer:
         "Git tags are used to mark specific points in a repository's history as important, typically for releases or milestones. There are two types of tags: lightweight and annotated. Lightweight tags are simple references to commits, while annotated tags include metadata such as the tagger's name, date, and a message. Tags are created using `git tag <tagname>` for lightweight tags and `git tag -a <tagname> -m \"message\"` for annotated tags. They help in tracking versions and releases in a project.",
-        category: "Git and Github",
+        category: "Git and GitHub",
     },
     {
       question:
         "How does GitHub Actions work for continuous integration and deployment?",
       answer:
         "GitHub Actions is a CI/CD tool integrated with GitHub that allows you to automate workflows directly in your repository. You define workflows using YAML files in the `.github/workflows` directory, specifying triggers (e.g., push, pull request) and jobs. Each job runs in a virtual environment and can execute multiple steps, such as building, testing, and deploying code. GitHub Actions simplifies automation by integrating with your GitHub repository and providing a seamless way to implement CI/CD pipelines.",
-        category: "Git and Github",
+        category: "Git and GitHub",
     },
     {
       question: "What is the difference between Git merge and Git rebase?",
       answer:
         "Git merge combines the histories of two branches, creating a merge commit that preserves the history of both branches. Git rebase, on the other hand, rewrites the commit history by applying changes from one branch onto another, resulting in a linear history. Merge is useful for preserving branch history, while rebase simplifies the commit history but may lead to a loss of context. Rebase should be used with caution, especially on shared branches, as it can alter commit history.",
-        category: "Git and Github",
+        category: "Git and GitHub",
     },
     {
       question:
         "How can you use Git to revert a commit and why might you need to do this?",
       answer:
         "To revert a commit in Git, use the `git revert <commit>` command. This creates a new commit that undoes the changes made by the specified commit, preserving the project history. Reverting is useful for undoing changes that were mistakenly committed or introduced issues. Unlike `git reset`, which alters the commit history, `git revert` maintains a clear history by recording the undo action as a new commit.",
-        category: "Git and Github",
+        category: "Git and GitHub",
     },
 
     // **Frontend Security**
