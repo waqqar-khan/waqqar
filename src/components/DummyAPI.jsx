@@ -111,7 +111,11 @@ const DummyAPI = () => {
         url: 'https://api.countrylayer.com/v2/all',
         description: 'Provides detailed country data, including demographics, languages, and currencies.',
       },
-      
+      {
+        name: 'Wizards API',
+        url: 'https://wizard-world-api.herokuapp.com/Wizards',
+        description: 'Provides wizards name, elixirs, etc...',
+      },
       {
         name: 'AviationStack API',
         url: 'https://aviationstack.com/',
@@ -151,6 +155,11 @@ const DummyAPI = () => {
         name: 'BigCommerce API',
         url: 'https://developer.bigcommerce.com/',
         description: 'An API that provides access to BigCommerce data like products, orders, and customers.',
+      },
+      {
+        name: 'Athar Transaction API',
+        url: 'https://dummyjson.com/c/36fe-ab86-40ec-bca1',
+        description: 'An API that provides debit, credit and other transactional records.',
       },
     ];
   
