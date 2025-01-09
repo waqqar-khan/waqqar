@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
+import DummyAPI from "./components/DummyAPI";
 import ReactJSBlog from "./components/blogs/ReactJSBlog";
 import JavaScriptBlog from "./components/blogs/JavaScriptBlog";
 import NextJSBlog from "./components/blogs/NextJSBlog";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/nextjs" element={<NextJSBlog />} />
             <Route path="/system-design" element={<SystemDesignBlog />} />
             <Route path="/miscellaneous" element={<MiscellaneousBlog />} />
+            <Route path="/dummyAPI" element={<DummyAPI />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
