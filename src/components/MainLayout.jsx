@@ -8,7 +8,9 @@ const MainLayout = () => {
     <div className="app-container">
       <Header />
       <main className="content">
-        <Outlet />
+        <div className="form-container">
+          <Outlet />
+        </div>
       </main>
       <Footer />
     </div>
