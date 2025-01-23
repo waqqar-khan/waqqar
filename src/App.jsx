@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
@@ -18,8 +19,11 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loginUser = (credentials) => {
+    console.log(credentials)
     if (credentials.username === "admin" && credentials.password === "password") {
+      console.log("iniside if",credentials)
       setIsLoggedIn(true);
+      return <Navigate to="/loggedin/admin" />;
     }
   };
 
