@@ -44,12 +44,12 @@ function App() {
             <Route path="/nextjs" element={<NextJSBlog />} />
             <Route path="/system-design" element={<SystemDesignBlog />} />
             <Route path="/miscellaneous" element={<MiscellaneousBlog />} />
-            <Route path="/dummyAPI" element={<DummyAPI />} />
             <Route path="/login" element={<Login onLogin={loginUser} />} />
             <Route
               path="/admin/adminPage"
               element={isLoggedIn ? <AdminPage onLogout={logoutUser} /> : <Navigate to="/login"/>}
             />
+            <Route path="/admin/dummyAPI" element={isLoggedIn ? <DummyAPI onLogout={logoutUser} /> : <Navigate to="/login"/>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
