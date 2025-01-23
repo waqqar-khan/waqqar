@@ -1,6 +1,5 @@
-import {useState} from "react";
-import { Navigate } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState} from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
 import DummyAPI from "./components/DummyAPI";
@@ -12,23 +11,26 @@ import NextJSBlog from "./components/blogs/NextJSBlog";
 import SystemDesignBlog from "./components/blogs/SystemDesignBlog";
 import MiscellaneousBlog from "./components/blogs/MiscellaneousBlog";
 import ErrorBoundary from "./utils/ErrorBoundary";
-import NotFound from './utils/NotFound';
+import NotFound from "./utils/NotFound";
 import "./App.css";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    return localStorage.getItem("isLoggedIn") === "true";
+  });
 
   const loginUser = (credentials) => {
-    console.log(credentials)
     if (credentials.username === "admin" && credentials.password === "password") {
-      console.log("iniside if",credentials)
       setIsLoggedIn(true);
-      return <Navigate to="/loggedin/admin" />;
+      localStorage.setItem("isLoggedIn", "true");
+    } else {
+      console.error("Invalid credentials");
     }
   };
 
   const logoutUser = () => {
     setIsLoggedIn(false);
+    localStorage.removeItem("isLoggedIn");
   };
 
   return (
@@ -45,8 +47,8 @@ function App() {
             <Route path="/dummyAPI" element={<DummyAPI />} />
             <Route path="/login" element={<Login onLogin={loginUser} />} />
             <Route
-              path="/loggedin/admin"
-              element={isLoggedIn ? <AdminPage onLogout={logoutUser} /> :<NotFound />}
+              path="/admin/adminPage"
+              element={isLoggedIn ? <AdminPage onLogout={logoutUser} /> : <Navigate to="/login"/>}
             />
             <Route path="*" element={<NotFound />} />
           </Route>

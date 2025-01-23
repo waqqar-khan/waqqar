@@ -1,14 +1,21 @@
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onLogin({ username, password });
+    setIsSubmitted(true);
   };
+
+  if (isSubmitted && localStorage.getItem("isLoggedIn") === "true") {
+    return <Navigate to="/admin/adminPage"/>;
+  }  
 
   return (
     <div className="login-page-container">

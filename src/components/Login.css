@@ -4,28 +4,28 @@
     max-width: 1600px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 1rem; 
-  }
-  
-  .form-container {
+    padding: 0 1rem;
+}
+
+.form-container {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
-  }
-  
-  .login-page-container {
+}
+
+.login-page-container {
     background-color: rgb(131 34 206 / 0.2);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 6rem auto;
-  }
-  
-  
-  .login-h2 {
+}
+
+
+.login-h2 {
     color: rgb(131 34 206 / 0.2);
     text-align: center;
     margin-bottom: 30px;
@@ -33,29 +33,29 @@
     font-weight: 600;
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .login-page-form {
+}
+
+
+.login-page-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .login-page-input-field {
+}
+
+.login-page-input-field {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  
-  .login-page-input-field:focus {
+}
+
+.login-page-input-field:focus {
     border-color: rgb(126 34 206 / 0.2);
     outline: none;
-  }
-  
-  .login-page-button {
+}
+
+.login-page-button {
     background-color: rgba(151, 9, 245, 0.582);
     color: white;
     padding: 12px;
@@ -64,10 +64,33 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .login-page-button:hover {
+}
+
+.login-page-button:hover {
     background-color: rgba(130, 7, 231, 0.877);
-  }
-  
-  
+}
+
+
+.adminPage-admin-heading {
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgba(159, 26, 243, 0.9);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.adminPage-logout-button {
+    padding: 10px 20px;
+    background-color: rgba(145, 14, 232, 0.797);
+    color: rgb(246, 242, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.adminPage-logout-button:hover {
+    background-color: rgb(151, 6, 248);
+}
