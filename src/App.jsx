@@ -14,6 +14,7 @@ import ErrorBoundary from "./utils/ErrorBoundary";
 import NotFound from "./utils/NotFound";
 import "./App.css";
 import ReactInterview from "./components/ReactInterview";
+import DailyRandomQuestions from "./components/DailyRandomQuestions";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -52,6 +53,7 @@ function App() {
             />
             <Route path="/admin/dummyAPI" element={isLoggedIn ? <DummyAPI onLogout={logoutUser} /> : <Navigate to="/login"/>} />
             <Route path="/admin/reactInterview" element={isLoggedIn ? <ReactInterview onLogout={logoutUser} /> : <Navigate to="/login"/>} />
+            <Route path="/admin/DailyRandomQuestions" element={isLoggedIn ? <DailyRandomQuestions onLogout={logoutUser} /> : <Navigate to="/login"/>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -13,10 +13,10 @@
     background-color: #872ea0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    z-index: 100;
-    transition: background-color 0.3s ease;
+    max-height: calc(100vh - 200px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
 .sidebar:hover {
@@ -51,6 +51,7 @@
     margin-left: 300px;
     padding: 20px;
     flex-grow: 1;
+    margin-bottom: 30px;
 }
 
 .question-container {
@@ -63,13 +64,12 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .question-title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #333;
+    color: #b339ebb7;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
@@ -85,7 +85,7 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #00B0FF;
+    color: #7E22CE;
 }
 
 .requirements-list {

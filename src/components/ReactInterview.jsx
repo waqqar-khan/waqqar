@@ -5,13 +5,13 @@ import '../styles/QuestionStyles.css';
 const ReactInterview = () => {
     const handleScrollToQuestion = (id) => {
         const questionElement = document.getElementById(`question-${id}`);
-        const headerHeight = document.querySelector('header')?.offsetHeight || 0; // Adjust this for the actual header element
+        const headerHeight = document.querySelector('header')?.offsetHeight || 0;
         questionElement?.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
         });
 
-        window.scrollBy(0, -headerHeight); // Adjust for the header height
+        window.scrollBy(0, -headerHeight);
     };
 
     return (
