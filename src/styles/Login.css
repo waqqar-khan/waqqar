@@ -1,5 +1,5 @@
 .adminPage-nav-button {
-    background-color: #4CAF50;
+    background-color: #aa13eb;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -14,7 +14,7 @@
 }
 
 .adminPage-nav-button:hover {
-    background-color: #45a049;
+    background-color: #d00dea;
 }
 
 .adminPage-nav-button:focus {
@@ -38,7 +38,7 @@
 }
 
 .adminPage-logout-button {
-    background-color: #f44336;
+    background-color: #e61e0f;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -53,7 +53,7 @@
 }
 
 .adminPage-logout-button:hover {
-    background-color: #d32f2f;
+    background-color: #fb2d2d;
 }
 
 .adminPage-logout-button:focus {
@@ -74,7 +74,7 @@
     align-items: center;
     padding: 20px;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #d770eceb;
 }
 
 .adminPage-cards {
@@ -86,10 +86,10 @@
 }
 
 .adminPage-card {
-    background-color: white;
+    background-color: rgb(190, 101, 235);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(205, 41, 230, 0.42);
     text-align: center;
     width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,8 +113,8 @@
 }
 
 .adminPage-nav-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #c926fa;
+    color: rgb(245, 239, 244);
     border: none;
     padding: 10px 20px;
     font-size: 14px;
@@ -124,11 +124,11 @@
 }
 
 .adminPage-nav-button:hover {
-    background-color: #45a049;
+    background-color: #b914eb;
 }
 
 .adminPage-logout-button {
-    background-color: #f44336;
+    background-color: #fb0e2e;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -143,7 +143,7 @@
 }
 
 .adminPage-logout-button:hover {
-    background-color: #d32f2f;
+    background-color: #f71616;
 }
 
 .adminPage-logout-button:focus {
@@ -198,7 +198,7 @@
 }
 
 .login-page-button {
-    background-color: #4CAF50;
+    background-color: #be0fe5;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -210,7 +210,7 @@
 }
 
 .login-page-button:hover {
-    background-color: #45a049;
+    background-color: #da05fa;
 }
 
 .error-message {
