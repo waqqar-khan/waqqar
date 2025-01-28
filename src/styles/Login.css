@@ -1,162 +1,236 @@
-.content {
-    flex: 1;
-    background-color: #f4f4f4;
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 1rem;
+.adminPage-nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    text-align: center;
+    display: inline-block;
 }
 
-.form-container {
-    padding: 20px;
+.adminPage-nav-button:hover {
+    background-color: #45a049;
+}
+
+.adminPage-nav-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .adminPage-nav-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.adminPage-admin-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.adminPage-logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminPage-logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.adminPage-logout-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .adminPage-logout-button {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+.adminPage-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.adminPage-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.adminPage-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adminPage-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.adminPage-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.adminPage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.adminPage-nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.adminPage-nav-button:hover {
+    background-color: #45a049;
+}
+
+.adminPage-logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminPage-logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.adminPage-logout-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .adminPage-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adminPage-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .adminPage-nav-button {
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+    }
 }
 
 .login-page-container {
-    background-color: rgb(131 34 206 / 0.2);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .login-h2 {
-    color: rgb(131 34 206 / 0.2);
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .login-page-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .login-page-input-field {
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 10px 0;
     font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.login-page-input-field:focus {
-    border-color: rgb(126 34 206 / 0.2);
-    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .login-page-button {
-    background-color: rgba(151, 9, 245, 0.582);
+    background-color: #4CAF50;
     color: white;
-    padding: 12px;
     border: none;
-    border-radius: 5px;
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .login-page-button:hover {
-    background-color: rgba(130, 7, 231, 0.877);
+    background-color: #45a049;
 }
 
-.adminPage-admin-heading {
-    font-size: 32px;
-    font-weight: bolder;
-    color: rgba(159, 26, 243, 0.9);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.adminPage-logout-button {
-    padding: 10px 20px;
-    background-color: rgba(145, 14, 232, 0.797);
-    color: rgb(246, 242, 248);
-    border: none;
+.error-message {
+    color: red;
+    background-color: #FFF0F5;
+    border: 1px solid #f5c6cb;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(255, 182, 193, 0.3), 0 1px 3px rgba(255, 182, 193, 0.15);
 }
 
-.adminPage-logout-button:hover {
-    background-color: rgb(151, 6, 248);
-}
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {
-    .login-page-container {
-        padding: 20px;
-    }
-
-    .login-h2 {
-        font-size: 1.6rem;
-    }
-
+    .login-page-input-field,
     .login-page-button {
+        font-size: 14px;
         padding: 10px;
-        font-size: 14px;
-    }
-
-    .login-page-input-field {
-        font-size: 14px;
-    }
-
-    .adminPage-admin-heading {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .login-page-container {
-        padding: 30px;
-    }
-
-    .login-h2 {
-        font-size: 1.8rem;
-    }
-
-    .login-page-button {
-        padding: 11px;
-        font-size: 15px;
-    }
-
-    .login-page-input-field {
-        font-size: 15px;
-    }
-
-    .adminPage-admin-heading {
-        font-size: 28px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .login-page-container {
-        padding: 40px;
-    }
-
-    .login-h2 {
-        font-size: 2rem;
-    }
-
-    .login-page-button {
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .login-page-input-field {
-        font-size: 16px;
-    }
-
-    .adminPage-admin-heading {
-        font-size: 32px;
     }
 }

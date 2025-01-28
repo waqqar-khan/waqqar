@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,28 +20,11 @@ import "./App.css";
 import ReactInterview from "./components/ReactInterview";
 import DailyRandomQuestions from "./components/DailyRandomQuestions";
 import JavaScriptInterview from "./components/JavaScriptInterview";
+import useAuth from "./hooks/useAuth";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    return localStorage.getItem("isLoggedIn") === "true";
-  });
-
-  const loginUser = (credentials) => {
-    if (
-      credentials.username === "admin" &&
-      credentials.password === "password"
-    ) {
-      setIsLoggedIn(true);
-      localStorage.setItem("isLoggedIn", "true");
-    } else {
-      console.error("Invalid credentials");
-    }
-  };
-
-  const logoutUser = () => {
-    setIsLoggedIn(false);
-    localStorage.removeItem("isLoggedIn");
-  };
+  const { isLoggedIn, loginError, loginUser, resetError, logoutUser } =
+    useAuth();
 
   return (
     <Router>
@@ -55,7 +37,16 @@ function App() {
             <Route path="/nextjs" element={<NextJSBlog />} />
             <Route path="/system-design" element={<SystemDesignBlog />} />
             <Route path="/miscellaneous" element={<MiscellaneousBlog />} />
-            <Route path="/login" element={<Login onLogin={loginUser} />} />
+            <Route
+              path="/login"
+              element={
+                <Login
+                  onLogin={loginUser}
+                  error={loginError}
+                  resetError={resetError}
+                />
+              }
+            />
             <Route
               path="/admin/adminPage"
               element={
