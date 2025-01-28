@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import "./Login.css";
+import "../styles/Login.css";
 
 function AdminPage({ onLogout }) {
     return (

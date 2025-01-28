@@ -13,6 +13,7 @@ import MiscellaneousBlog from "./components/blogs/MiscellaneousBlog";
 import ErrorBoundary from "./utils/ErrorBoundary";
 import NotFound from "./utils/NotFound";
 import "./App.css";
+import ReactInterview from "./components/ReactInterview";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -50,6 +51,7 @@ function App() {
               element={isLoggedIn ? <AdminPage onLogout={logoutUser} /> : <Navigate to="/login"/>}
             />
             <Route path="/admin/dummyAPI" element={isLoggedIn ? <DummyAPI onLogout={logoutUser} /> : <Navigate to="/login"/>} />
+            <Route path="/admin/reactInterview" element={isLoggedIn ? <ReactInterview onLogout={logoutUser} /> : <Navigate to="/login"/>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
