@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import '../styles/QuestionStyles.css';
 
-const Question = ({ question }) => {
+const Question = ({ question, note }) => {
     return (
         <div className="question-container">
             <h2 className="question-title" style={{ userSelect: "text" }}>{question.title}</h2>
@@ -27,9 +27,7 @@ const Question = ({ question }) => {
                 </ul>
             </div>
 
-            <p className="question-note" style={{ userSelect: "text" }}>
-                Please implement the solution as a React component and ensure that it meets all the above requirements.
-            </p>
+            <p className="question-note" style={{ userSelect: "text" }}>{note}</p>
         </div>
     );
 };
@@ -46,6 +44,7 @@ Question.propTypes = {
         ).isRequired,
         expectedBehavior: PropTypes.arrayOf(PropTypes.string).isRequired,
     }).isRequired,
+    note: PropTypes.string.isRequired,
 };
 
 export default Question;

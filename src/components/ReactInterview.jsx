@@ -19,17 +19,23 @@ const ReactInterview = () => {
             <div className="sidebar">
                 <h2>ReactJS Questions</h2>
                 <ul>
-                    {questions.map((question) => (
+                    {questions.map((question, index) => (
                         <li key={question.id} onClick={() => handleScrollToQuestion(question.id)}>
-                            {question.title.split(':')[1]?.trim() || question.title}
+                            {`${index + 1}. ${question.title.split(':')[1]?.trim() || question.title}`}
                         </li>
                     ))}
                 </ul>
             </div>
             <div className="questions-container">
-                {questions.map((question) => (
+                {questions.map((question, index) => (
                     <div id={`question-${question.id}`} key={question.id}>
-                        <Question question={question} />
+                        <Question
+                            question={{
+                                ...question,
+                                title: `${index + 1}. React: ${question.title}`,
+                            }}
+                            note="Please implement the solution as a React component and ensure that it meets all the above requirements."
+                        />
                     </div>
                 ))}
             </div>
