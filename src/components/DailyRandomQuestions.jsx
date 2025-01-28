@@ -1,11 +1,13 @@
-import { questions } from '../data/questions';
+import { questions } from '../data/reactQuestions';
+import { javaScriptQuestions } from '../data/javaScriptQuestions';
 import Question from './Question';
 
 const getRandomQuestions = () => {
-    const randomQuestions = [...questions];
-    randomQuestions.sort(() => (Math.random() - 0.5));
-
-    return randomQuestions.slice(0, 3);
+    const combinedQuestions = [
+        ...questions.sort(() => Math.random() - 0.5).slice(0, 2),
+        ...javaScriptQuestions.sort(() => Math.random() - 0.5).slice(0, 2),
+    ];
+    return combinedQuestions.sort(() => Math.random() - 0.5);
 };
 
 const DailyRandomQuestions = () => {
@@ -14,7 +16,7 @@ const DailyRandomQuestions = () => {
     const today = new Date();
     const day = today.getDate();
     const month = today.toLocaleString('default', { month: 'short' });
-    
+
     const ordinalSuffix = (day) => {
         if (day > 3 && day < 21) return 'th';
         switch (day % 10) {
@@ -81,7 +83,7 @@ const DailyRandomQuestions = () => {
     return (
         <div style={pageContainerStyle}>
             <h1 style={responsiveHeadingStyle}>
-                Today&apos;s [{todayDate}] Random Questions 
+                Today&apos;s [{todayDate}] Random Questions
             </h1>
             <div style={questionsContainerStyle}>
                 {randomQuestions.map((question) => (

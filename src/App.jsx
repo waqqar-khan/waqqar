@@ -1,5 +1,10 @@
-import { useState} from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
 import DummyAPI from "./components/DummyAPI";
@@ -15,6 +20,7 @@ import NotFound from "./utils/NotFound";
 import "./App.css";
 import ReactInterview from "./components/ReactInterview";
 import DailyRandomQuestions from "./components/DailyRandomQuestions";
+import JavaScriptInterview from "./components/JavaScriptInterview";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -22,7 +28,10 @@ function App() {
   });
 
   const loginUser = (credentials) => {
-    if (credentials.username === "admin" && credentials.password === "password") {
+    if (
+      credentials.username === "admin" &&
+      credentials.password === "password"
+    ) {
       setIsLoggedIn(true);
       localStorage.setItem("isLoggedIn", "true");
     } else {
@@ -49,11 +58,54 @@ function App() {
             <Route path="/login" element={<Login onLogin={loginUser} />} />
             <Route
               path="/admin/adminPage"
-              element={isLoggedIn ? <AdminPage onLogout={logoutUser} /> : <Navigate to="/login"/>}
+              element={
+                isLoggedIn ? (
+                  <AdminPage onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
             />
-            <Route path="/admin/dummyAPI" element={isLoggedIn ? <DummyAPI onLogout={logoutUser} /> : <Navigate to="/login"/>} />
-            <Route path="/admin/reactInterview" element={isLoggedIn ? <ReactInterview onLogout={logoutUser} /> : <Navigate to="/login"/>} />
-            <Route path="/admin/DailyRandomQuestions" element={isLoggedIn ? <DailyRandomQuestions onLogout={logoutUser} /> : <Navigate to="/login"/>} />
+            <Route
+              path="/admin/dummyAPI"
+              element={
+                isLoggedIn ? (
+                  <DummyAPI onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/admin/reactInterview"
+              element={
+                isLoggedIn ? (
+                  <ReactInterview onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/admin/javaScriptInterview"
+              element={
+                isLoggedIn ? (
+                  <JavaScriptInterview onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/admin/DailyRandomQuestions"
+              element={
+                isLoggedIn ? (
+                  <DailyRandomQuestions onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
