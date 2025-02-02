@@ -329,31 +329,6 @@ export const javaScriptQuestions = [
   },
   {
     id: 14,
-    title: "JavaScript: Goal Parser Interpretation",
-    description:
-      "You are tasked with interpreting a string according to specific rules of a goal parser.",
-    sections: [
-      {
-        title: "1. Function Requirements",
-        items: [
-          "Create a function named `interpretGoalParser` that accepts a string as input.",
-          "Replace 'G' with 'G', '()' with 'o', and '(al)' with 'al'.",
-        ],
-      },
-      {
-        title: "2. Examples",
-        items: [
-          "Input: 'G()(al)' -> Output: 'Goal'.",
-          "Input: 'G()()()()(al)' -> Output: 'Gooooal'.",
-        ],
-      },
-    ],
-    expectedBehavior: [
-      "The function should interpret the input string based on the given rules and return the result.",
-    ],
-  },
-  {
-    id: 15,
     title: "JavaScript: Jewels and Stones",
     description:
       "You are tasked with finding how many stones in a string are also jewels.",
@@ -378,7 +353,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 16,
+    id: 15,
     title: "JavaScript: Final Value of Variable After Performing Operations",
     description:
       "You are tasked with finding the final value of a variable after performing a series of operations.",
@@ -403,7 +378,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 17,
+    id: 16,
     title:
       "JavaScript: Partitioning Into Minimum Number of Deci-Binary Numbers",
     description:
@@ -426,7 +401,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 18,
+    id: 17,
     title: "JavaScript: Number of Good Pairs",
     description:
       "You are tasked with finding the number of good pairs in an array.",
@@ -451,7 +426,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 19,
+    id: 18,
     title: "JavaScript: To Lower Case",
     description:
       "You are tasked with converting a given string to lowercase letters.",
@@ -476,7 +451,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 20,
+    id: 19,
     title: "JavaScript: How Many Numbers Are Smaller Than the Current Number",
     description:
       "You are tasked with finding how many numbers are smaller than the current number for each element in an array.",
@@ -501,7 +476,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 21,
+    id: 20,
     title: "JavaScript: Find Numbers with Even Number of Digits",
     description:
       "You are tasked with finding the count of numbers in an array that have an even number of digits.",
@@ -526,7 +501,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 22,
+    id: 21,
     title: "JavaScript: Contains Duplicate",
     description:
       "You are tasked with determining if any value appears at least twice in an array.",
@@ -551,7 +526,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 23,
+    id: 22,
     title: "JavaScript: Two Sum",
     description:
       "You are tasked with finding two numbers in an array that add up to a specific target.",
@@ -576,7 +551,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 24,
+    id: 23,
     title: "JavaScript: Defanging an IP Address",
     description:
       "You are tasked with replacing every '.' in an IP address with '[.]'.",
@@ -601,7 +576,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 25,
+    id: 24,
     title: "JavaScript: Flatten Multi Nested Array into 1D Array",
     description:
       "You are tasked with flattening a multi-level nested array into a one-dimensional array.",
@@ -626,7 +601,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 26,
+    id: 25,
     title: "JavaScript: Count Occurrences",
     description:
       "You are tasked with counting the occurrences of each element in an array.",
@@ -651,7 +626,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 27,
+    id: 26,
     title: "JavaScript: Sort Count Occurrences",
     description:
       "You are tasked with counting the occurrences of elements in an array and sorting the result by count.",
@@ -676,7 +651,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 28,
+    id: 27,
     title: "JavaScript: Group By Specific/Single Key in Array of Objects",
     description:
       "You are tasked with grouping objects in an array by a specific key.",
@@ -701,7 +676,7 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 29,
+    id: 28,
     title: "JavaScript: Remove Hash Characters",
     description:
       "You are tasked with removing hash (#) characters and their trailing text from a string.",
