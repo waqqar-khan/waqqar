@@ -16,11 +16,11 @@ import SystemDesignBlog from "./components/blogs/SystemDesignBlog";
 import MiscellaneousBlog from "./components/blogs/MiscellaneousBlog";
 import ErrorBoundary from "./utils/ErrorBoundary";
 import NotFound from "./utils/NotFound";
-import "./App.css";
 import ReactInterview from "./components/ReactInterview";
 import DailyRandomQuestions from "./components/DailyRandomQuestions";
 import JavaScriptInterview from "./components/JavaScriptInterview";
 import useAuth from "./hooks/useAuth";
+import "./App.css";
 
 function App() {
   const { isLoggedIn, loginError, loginUser, resetError, logoutUser } =

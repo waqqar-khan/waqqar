@@ -5,7 +5,29 @@ import "../styles/Login.css";
 function AdminPage({ onLogout }) {
   return (
     <div className="adminPage-container">
-      <h2 className="adminPage-admin-heading">Welcome to the Admin Page!</h2>
+      <h2 className="adminPage-admin-heading">
+        Welcome to the Admin Page!{" "}
+        <span
+          style={{
+            marginLeft: "4rem",
+            display: "inline-flex",
+            gap: "1rem",
+            alignItems: "center",
+          }}
+        >
+          <button
+            onClick={onLogout}
+            style={{
+              position: "relative",
+              top: "-10px",
+              padding: "0.5rem 1rem",
+            }}
+            className="adminPage-logout-button"
+          >
+            Logout
+          </button>
+        </span>
+      </h2>
 
       <div className="adminPage-cards">
         <div className="adminPage-card">
@@ -43,10 +65,6 @@ function AdminPage({ onLogout }) {
           </Link>
         </div>
       </div>
-
-      <button className="adminPage-logout-button" onClick={onLogout}>
-        Logout
-      </button>
     </div>
   );
 }

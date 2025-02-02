@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import AdminHeaderButtons from "./AdminHeaderButtons";
 import "../styles/Login.css";
 
 const DummyAPI = ({ onLogout }) => {
@@ -155,8 +156,24 @@ const DummyAPI = ({ onLogout }) => {
     <div className="w-full max-w-4xl mx-auto p-5 md:pt-8 lg:pt-14 font-sans mt-14">
       <h1 className="italic text-2xl text-center text-purple-800 font-serif font-semibold pb-8">
         Dummy APIs{" "}
-        <span style={{marginLeft: "4rem"}}>
-          <button className="adminPage-logout-button" onClick={onLogout}>
+        <span
+          style={{
+            marginLeft: "4rem",
+            display: "inline-flex",
+            gap: "1rem",
+            alignItems: "center",
+          }}
+        >
+          <AdminHeaderButtons />
+          <button
+            onClick={onLogout}
+            style={{
+              position: "relative",
+              top: "-10px",
+              padding: "0.5rem 1rem",
+            }}
+            className="adminPage-logout-button"
+          >
             Logout
           </button>
         </span>
@@ -169,7 +186,7 @@ const DummyAPI = ({ onLogout }) => {
               href={api.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-purple-600 hover:underline"
             >
               {api.name}
             </a>

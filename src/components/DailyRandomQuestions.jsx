@@ -1,6 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { questions } from "../data/reactQuestions";
 import { javaScriptQuestions } from "../data/javaScriptQuestions";
+import AdminHeaderButtons from "./AdminHeaderButtons";
+import PropTypes from "prop-types";
 import Question from "./Question";
 
 const getRandomQuestions = () => {
@@ -11,7 +13,7 @@ const getRandomQuestions = () => {
   return combinedQuestions.sort(() => Math.random() - 0.5);
 };
 
-const DailyRandomQuestions = () => {
+const DailyRandomQuestions = ({ onLogout }) => {
   const [randomQuestions, setRandomQuestions] = useState([]);
 
   const todayDate = useMemo(() => {
@@ -108,6 +110,27 @@ const DailyRandomQuestions = () => {
     <div style={pageContainerStyle}>
       <h1 style={responsiveHeadingStyle}>
         Today&apos;s [{todayDate}] Random Questions
+        <span
+          style={{
+            marginLeft: "4rem",
+            display: "inline-flex",
+            gap: "1rem",
+            alignItems: "center",
+          }}
+        >
+          <AdminHeaderButtons />
+          <button
+            onClick={onLogout}
+            style={{
+              position: "relative",
+              top: "-10px",
+              padding: "0.5rem 1rem",
+            }}
+            className="adminPage-logout-button"
+          >
+            Logout
+          </button>
+        </span>
       </h1>
       <div style={questionsContainerStyle}>
         {randomQuestions.map((question, index) => (
@@ -118,6 +141,10 @@ const DailyRandomQuestions = () => {
       </div>
     </div>
   );
+};
+
+DailyRandomQuestions.propTypes = {
+  onLogout: PropTypes.func.isRequired,
 };
 
 export default DailyRandomQuestions;

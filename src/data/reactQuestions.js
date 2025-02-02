@@ -8,7 +8,7 @@ export const questions = [
       {
         title: "1. Data Fetching & Display",
         items: [
-          "Fetch data from an API and display it on the page.",
+          "Fetch data from an API(https://restcountries.com/v2/all) and display it on the page.",
           "Display the data in a paginated format, showing only a limited number of items per page.",
         ],
       },
@@ -252,31 +252,25 @@ export const questions = [
       "You are tasked with building a simple Todo app using ReactJS. The app should allow users to add, edit, and delete tasks dynamically.",
     sections: [
       {
-        title: "1. State Management",
-        items: [
-          "Use React's useState hook to manage the list of items, the current task input, and the index of the task being edited.",
-        ],
-      },
-      {
-        title: "2. Add Item",
+        title: "1. Add Item",
         items: [
           "Implement functionality to add a new task to the list when the user submits the form.",
         ],
       },
       {
-        title: "3. Edit Item",
+        title: "2. Edit Item",
         items: [
           "Implement functionality to allow the user to edit a task. When an item is clicked for editing, the input field should be populated with the task to be edited.",
         ],
       },
       {
-        title: "4. Delete Item",
+        title: "3. Delete Item",
         items: [
           "Implement functionality to delete a task when the user clicks the delete button next to the task.",
         ],
       },
       {
-        title: "5. UI Display",
+        title: "4. UI Display",
         items: [
           "Display the list of tasks dynamically as the user adds, edits, or deletes items.",
           "For each task, show the task name along with 'Edit' and 'Delete' buttons.",
@@ -298,38 +292,32 @@ export const questions = [
       "You are tasked with building a Todo application in ReactJS. The app should allow the user to create, update, and delete tasks, where each task has a title and a description. The task list should display both the title and the task details. Each task should have 'Edit' and 'Delete' buttons for modification or removal.",
     sections: [
       {
-        title: "1. State Management",
-        items: [
-          "Use React's useState hook to manage the list of tasks, the title input, the task input, and the index of the task being edited.",
-        ],
-      },
-      {
-        title: "2. Input Fields",
+        title: "1. Input Fields",
         items: [
           "Create two input fields, one for the task title and another for the task description.",
           "Create a submit button that, when clicked, adds a task to the list with both the title and task details.",
         ],
       },
       {
-        title: "3. Add Task",
+        title: "2. Add Task",
         items: [
           "When the submit button is clicked, both the task title and description should be added to the list of tasks, showing the title along with the task description.",
         ],
       },
       {
-        title: "4. Edit Task",
+        title: "3. Edit Task",
         items: [
           "When the 'Edit' button is clicked, the selected task's title and description should appear in the input fields, allowing the user to modify them.",
         ],
       },
       {
-        title: "5. Delete Task",
+        title: "4. Delete Task",
         items: [
           "When the 'Delete' button is clicked, the selected task should be removed from the list.",
         ],
       },
       {
-        title: "6. Display List",
+        title: "5. Display List",
         items: [
           "The task list should display each task with its title and description in a readable format.",
           "For each task, there should be 'Edit' and 'Delete' buttons to modify or remove tasks.",
@@ -751,14 +739,7 @@ export const questions = [
       "You are tasked with demonstrating the concept of lifting state up in ReactJS. The component should meet the following requirements:",
     sections: [
       {
-        title: "1. State Management",
-        items: [
-          "Create two components: a parent component and a child component.",
-          "The parent component should manage the state, and the child component should receive and modify the state.",
-        ],
-      },
-      {
-        title: "2. State Update",
+        title: "1. State Update",
         items: [
           "When a user interacts with the child component, the parent component’s state should be updated.",
           "The updated state should be passed back to the child component to reflect the change.",
@@ -782,13 +763,6 @@ export const questions = [
         items: [
           "Render different UI elements based on a condition (e.g., display a loading spinner, success message, or error message).",
           "Use conditional logic (e.g., if/else or ternary operators) to determine which UI elements to display.",
-        ],
-      },
-      {
-        title: "2. State Management",
-        items: [
-          "Create a state variable that controls the condition for rendering different UI elements.",
-          "Update the state based on user actions or API responses.",
         ],
       },
     ],
