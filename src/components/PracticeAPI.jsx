@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import AdminHeaderButtons from "./AdminHeaderButtons";
 import "../styles/Login.css";
 
-const DummyAPI = ({ onLogout }) => {
+const PracticeAPI = ({ onLogout }) => {
   const apiList = [
     {
       name: "JSONPlaceholder",
@@ -202,8 +202,8 @@ const DummyAPI = ({ onLogout }) => {
   );
 };
 
-DummyAPI.propTypes = {
+PracticeAPI.propTypes = {
   onLogout: PropTypes.func.isRequired,
 };
 
-export default DummyAPI;
+export default PracticeAPI;

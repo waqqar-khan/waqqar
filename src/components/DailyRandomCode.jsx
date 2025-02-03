@@ -5,7 +5,7 @@ import AdminHeaderButtons from "./AdminHeaderButtons";
 import PropTypes from "prop-types";
 import Question from "./Question";
 
-const getRandomQuestions = () => {
+const getRandomCodingQuestions = () => {
   const combinedQuestions = [
     ...questions.sort(() => Math.random() - 0.5).slice(0, 2),
     ...javaScriptQuestions.sort(() => Math.random() - 0.5).slice(0, 2),
@@ -13,7 +13,7 @@ const getRandomQuestions = () => {
   return combinedQuestions.sort(() => Math.random() - 0.5);
 };
 
-const DailyRandomQuestions = ({ onLogout }) => {
+const DailyRandomCode = ({ onLogout }) => {
   const [randomQuestions, setRandomQuestions] = useState([]);
 
   const todayDate = useMemo(() => {
@@ -43,7 +43,7 @@ const DailyRandomQuestions = ({ onLogout }) => {
     const currentDate = new Date().toDateString();
 
     if (lastUpdatedDate !== currentDate) {
-      const newQuestions = getRandomQuestions();
+      const newQuestions = getRandomCodingQuestions();
       setRandomQuestions(newQuestions);
       localStorage.setItem("randomQuestions", JSON.stringify(newQuestions));
       localStorage.setItem("lastUpdatedDate", currentDate);
@@ -143,8 +143,8 @@ const DailyRandomQuestions = ({ onLogout }) => {
   );
 };
 
-DailyRandomQuestions.propTypes = {
+DailyRandomCode.propTypes = {
   onLogout: PropTypes.func.isRequired,
 };
 
-export default DailyRandomQuestions;
+export default DailyRandomCode;

@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Home from "./components/Home";
-import DummyAPI from "./components/DummyAPI";
 import Login from "./components/Login";
 import AdminPage from "./components/AdminPage";
 import ReactJSBlog from "./components/blogs/ReactJSBlog";
@@ -16,9 +15,11 @@ import SystemDesignBlog from "./components/blogs/SystemDesignBlog";
 import MiscellaneousBlog from "./components/blogs/MiscellaneousBlog";
 import ErrorBoundary from "./utils/ErrorBoundary";
 import NotFound from "./utils/NotFound";
-import ReactInterview from "./components/ReactInterview";
-import DailyRandomQuestions from "./components/DailyRandomQuestions";
-import JavaScriptInterview from "./components/JavaScriptInterview";
+import PracticeAPI from "./components/PracticeAPI";
+import ReactInterviewCode from "./components/ReactInterviewCode";
+import JavaScriptInterviewCode from "./components/JavaScriptInterviewCode";
+import DailyRandomCode from "./components/DailyRandomCode";
+import PracticeInterviewCode from "./components/PracticeInterviewCode";
 import useAuth from "./hooks/useAuth";
 import "./App.css";
 
@@ -48,7 +49,7 @@ function App() {
               }
             />
             <Route
-              path="/admin/adminPage"
+              path="/admin/AdminPage"
               element={
                 isLoggedIn ? (
                   <AdminPage onLogout={logoutUser} />
@@ -58,40 +59,50 @@ function App() {
               }
             />
             <Route
-              path="/admin/dummyAPI"
+              path="/admin/Practice+API"
               element={
                 isLoggedIn ? (
-                  <DummyAPI onLogout={logoutUser} />
+                  <PracticeAPI onLogout={logoutUser} />
                 ) : (
                   <Navigate to="/login" />
                 )
               }
             />
             <Route
-              path="/admin/reactInterview"
+              path="/admin/React+Interview+Coding+Questions"
               element={
                 isLoggedIn ? (
-                  <ReactInterview onLogout={logoutUser} />
+                  <ReactInterviewCode onLogout={logoutUser} />
                 ) : (
                   <Navigate to="/login" />
                 )
               }
             />
             <Route
-              path="/admin/javaScriptInterview"
+              path="/admin/JavaScript+Interview+Coding+Questions"
               element={
                 isLoggedIn ? (
-                  <JavaScriptInterview onLogout={logoutUser} />
+                  <JavaScriptInterviewCode onLogout={logoutUser} />
                 ) : (
                   <Navigate to="/login" />
                 )
               }
             />
             <Route
-              path="/admin/DailyRandomQuestions"
+              path="/admin/Daily+Random+Interview+Coding+Questions"
               element={
                 isLoggedIn ? (
-                  <DailyRandomQuestions onLogout={logoutUser} />
+                  <DailyRandomCode onLogout={logoutUser} />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/admin/Practice+Interview+Coding+Questions"
+              element={
+                isLoggedIn ? (
+                  <PracticeInterviewCode onLogout={logoutUser} />
                 ) : (
                   <Navigate to="/login" />
                 )

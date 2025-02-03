@@ -33,14 +33,14 @@ function AdminPage({ onLogout }) {
         <div className="adminPage-card">
           <h3>Dummy API</h3>
           <p>Access and test various dummy APIs for your needs.</p>
-          <Link to="/admin/dummyAPI">
+          <Link to="/admin/Practice+API">
             <button className="adminPage-nav-button">Go to Dummy API</button>
           </Link>
         </div>
         <div className="adminPage-card">
           <h3>React Interview</h3>
           <p>Practice React interview questions and improve your skills.</p>
-          <Link to="/admin/reactInterview">
+          <Link to="/admin/React+Interview+Coding+Questions">
             <button className="adminPage-nav-button">React Interview</button>
           </Link>
         </div>
@@ -49,16 +49,28 @@ function AdminPage({ onLogout }) {
           <p>
             Test your JavaScript knowledge with challenging interview questions.
           </p>
-          <Link to="/admin/javaScriptInterview">
+          <Link to="/admin/JavaScript+Interview+Coding+Questions">
             <button className="adminPage-nav-button">
               JavaScript Interview
             </button>
           </Link>
         </div>
         <div className="adminPage-card">
+          <h3>Practice Interview Code</h3>
+          <p>
+            Practice your JavaScript and React knowledge with challenging coding
+            interview questions.
+          </p>
+          <Link to="/admin/Practice+Interview+Coding+Questions">
+            <button className="adminPage-nav-button">
+              Practice Interview Code
+            </button>
+          </Link>
+        </div>
+        <div className="adminPage-card">
           <h3>Daily Random Questions</h3>
           <p>Practice your skills with random coding challenges every day.</p>
-          <Link to="/admin/DailyRandomQuestions">
+          <Link to="/admin/Daily+Random+Interview+Coding+Questions">
             <button className="adminPage-nav-button">
               Daily Random Questions
             </button>

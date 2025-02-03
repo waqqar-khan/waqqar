@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const AdminHeaderButtons = ({backPath = "/admin/adminPage" }) => {
+const AdminHeaderButtons = ({backPath = "/admin/AdminPage" }) => {
   const navigate = useNavigate();
   
 

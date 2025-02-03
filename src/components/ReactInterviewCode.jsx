@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Question from "./Question";
 import "../styles/QuestionStyles.css";
 
-const ReactInterview = ({ onLogout }) => {
+const ReactInterviewCode = ({ onLogout }) => {
   const handleScrollToQuestion = (id) => {
     const questionElement = document.getElementById(`question-${id}`);
     const headerHeight = document.querySelector("header")?.offsetHeight || 0;
@@ -74,8 +74,8 @@ const ReactInterview = ({ onLogout }) => {
   );
 };
 
-ReactInterview.propTypes = {
+ReactInterviewCode.propTypes = {
   onLogout: PropTypes.func.isRequired,
 };
 
-export default ReactInterview;
+export default ReactInterviewCode;
