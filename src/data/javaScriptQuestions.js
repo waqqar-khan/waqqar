@@ -378,28 +378,31 @@ export const javaScriptQuestions = [
     ],
   },
   {
-    id: 16,
-    title:
-      "JavaScript: Partitioning Into Minimum Number of Deci-Binary Numbers",
-    description:
-      "You are tasked with partitioning a number into the minimum number of deci-binary numbers.",
-    sections: [
+    "id": 16,
+    "title": "JavaScript: Longest Common Prefix",
+    "description": "You are tasked with finding the longest common prefix among an array of strings.",
+    "sections": [
       {
-        title: "1. Function Requirements",
-        items: [
-          "Create a function named `minPartitions` that accepts a string representing a number.",
-          "Return the minimum number of deci-binary numbers needed to sum up to the given number.",
-        ],
+        "title": "1. Function Requirements",
+        "items": [
+          "Create a function named 'longestCommonPrefix' that accepts an array of strings.",
+          "The function should return the longest common prefix shared among all strings in the array.",
+          "If there is no common prefix, return an empty string ''."
+        ]
       },
       {
-        title: "2. Examples",
-        items: ["Input: '32' -> Output: 3.", "Input: '82734' -> Output: 8."],
-      },
+        "title": "2. Examples",
+        "items": [
+          "Input: ['flower', 'flow', 'flight'] -> Output: 'fl' (Because 'fl' is the common starting part in all three strings.)",
+          "Input: ['dog', 'racecar', 'car'] -> Output: '' (There is no common starting part among the strings.)"
+        ]
+      }
     ],
-    expectedBehavior: [
-      "The function should return the minimum number of deci-binary numbers required.",
-    ],
-  },
+    "expectedBehavior": [
+      "The function should correctly identify and return the longest common prefix among the input strings.",
+      "If no common prefix exists, the function should return an empty string."
+    ]
+  },  
   {
     id: 17,
     title: "JavaScript: Number of Good Pairs",
