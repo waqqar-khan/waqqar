@@ -1,24 +1,49 @@
 import PropTypes from "prop-types";
 import "../styles/QuestionStyles.css";
+import { useState } from "react";
 
 const Question = ({ question, note }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const questionContent = `
+      ${question.title}
+  
+      ${question.description}
+  
+      ${question.sections
+        .map((section) => `${section.title}: ${section.items.join(", ")}`)
+        .join("\n")}
+  
+      Expected Behavior:
+      ${question.expectedBehavior.join("\n")}
+    `;
+
+    navigator.clipboard
+      .writeText(questionContent)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch(() => alert("Failed to copy!"));
+  };
+
   return (
     <div className="question-container">
-      <h2 className="question-title" style={{ userSelect: "text" }}>
-        {question.title}
-      </h2>
-      <p className="question-description" style={{ userSelect: "text" }}>
-        {question.description}
-      </p>
+      <div className="question-header">
+        <h2 className="question-title text-select">{question.title}</h2>
+        <button className="copy-button" onClick={handleCopy}>
+          {copied ? "Copied!" : "Copy"}
+        </button>
+      </div>
+      <p className="question-description text-select">{question.description}</p>
 
-      {question.sections.map((section, secIndex) => (
-        <div key={secIndex} className="question-section">
-          <h3 className="section-title" style={{ userSelect: "text" }}>
-            {section.title}
-          </h3>
+      {question.sections.map((section) => (
+        <div key={section.title} className="question-section">
+          <h3 className="section-title text-select">{section.title}</h3>
           <ul className="requirements-list">
-            {section.items.map((item, itemIndex) => (
-              <li key={itemIndex} style={{ userSelect: "text" }}>
+            {section.items.map((item) => (
+              <li key={item} className="text-select">
                 {item}
               </li>
             ))}
@@ -27,21 +52,17 @@ const Question = ({ question, note }) => {
       ))}
 
       <div className="question-section">
-        <h3 className="section-title" style={{ userSelect: "text" }}>
-          Expected Behavior:
-        </h3>
+        <h3 className="section-title text-select">Expected Behavior:</h3>
         <ul className="requirements-list">
-          {question.expectedBehavior.map((behavior, behaviorIndex) => (
-            <li key={behaviorIndex} style={{ userSelect: "text" }}>
+          {question.expectedBehavior.map((behavior) => (
+            <li key={behavior} className="text-select">
               {behavior}
             </li>
           ))}
         </ul>
       </div>
 
-      <p className="question-note" style={{ userSelect: "text" }}>
-        {note}
-      </p>
+      {note && <p className="question-note text-select">{note}</p>}
     </div>
   );
 };
@@ -59,6 +80,10 @@ Question.propTypes = {
     expectedBehavior: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   note: PropTypes.string,
+};
+
+Question.defaultProps = {
+  note: "",
 };
 
 export default Question;
